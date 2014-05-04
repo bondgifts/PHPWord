@@ -4,7 +4,7 @@
  *
  * @link        https://github.com/PHPOffice/PHPWord
  * @copyright   2014 PHPWord
- * @license     http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt LGPL
+ * @license     http://www.gnu.org/licenses/lgpl.txt LGPL
  */
 
 namespace PhpOffice\PhpWord\Element;
@@ -249,7 +249,6 @@ abstract class AbstractContainer extends AbstractElement
         $rId = Media::addElement($elementDocPart, 'image', $src, $image);
         $image->setRelationId($rId);
         $this->addElement($image);
-
         return $image;
     }
 
@@ -413,7 +412,7 @@ abstract class AbstractContainer extends AbstractElement
         $docPart = $isCellTextrun ? $this->getDocPart() : $this->container;
         $docPartId = $isCellTextrun ? $this->getDocPartId() : $this->sectionId;
         $inHeaderFooter = ($docPart == 'header' || $docPart == 'footer');
-
+        $docPartId = $inHeaderFooter ? $this->getDocPartId() : $docPartId;
         return $inHeaderFooter ? $docPart . $docPartId : $docPart;
     }
 
