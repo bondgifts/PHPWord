@@ -119,15 +119,15 @@
         <li class="nav-header">
             <i class="icon-custom icon-method"></i> Methods
             <ul>
-                                                                                                    <li class="method public">
-        <a href="#method_writeHeader" title="writeHeader :: Write word/headerx.xml">
-            <span class="description">Write word/headerx.xml</span><pre>writeHeader</pre>
+                                                                                                    <li class="method public inherited">
+        <a href="#method_write" title="write :: Write part">
+            <span class="description">Write part</span><pre>write</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_writeFooter" title="writeFooter :: Write word/footerx.xml">
-            <span class="description">Write word/footerx.xml</span><pre>writeFooter</pre>
+        <a href="#method_setElement" title="setElement :: Set element">
+            <span class="description">Set element</span><pre>setElement</pre>
         </a>
     </li>
 
@@ -180,7 +180,7 @@
                 <small style="display: block; text-align: right">
                                             Extends <a href="../classes/PhpOffice.PhpWord.Writer.Word2007.Part.Footer.html">\PhpOffice\PhpWord\Writer\Word2007\Part\Footer</a>
                                                         </small>
-                <p class="short_description">Word2007 header part writer</p>
+                <p class="short_description">Word2007 header part writer: word/headerx.xml</p>
                 <div class="details">
                     <div class="long_description">
                         
@@ -189,46 +189,10 @@
                                                                                                                                                                                                                                                             </table>
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
-                                                                <a id="method_writeHeader"></a>
-                        <div class="element clickable method public  method_writeHeader" data-toggle="collapse" data-target=".method_writeHeader .collapse">
-                            <h2>Write word/headerx.xml</h2>
-                            <pre>writeHeader(\PhpOffice\PhpWord\Element\AbstractContainer $element) </pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$element</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractContainer.html">\PhpOffice\PhpWord\Element\AbstractContainer</a></code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_writeFooter"></a>
-                        <div class="element clickable method public  method_writeFooter inherited" data-toggle="collapse" data-target=".method_writeFooter .collapse">
-                            <h2>Write word/footerx.xml</h2>
-                            <pre>writeFooter(\PhpOffice\PhpWord\Element\AbstractContainer $element) </pre>
+                                                                <a id="method_write"></a>
+                        <div class="element clickable method public  method_write inherited" data-toggle="collapse" data-target=".method_write .collapse">
+                            <h2>Write part</h2>
+                            <pre>write() : string</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -252,12 +216,40 @@
                                             </tr>
                                                                             </table>
 
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setElement"></a>
+                        <div class="element clickable method public  method_setElement inherited" data-toggle="collapse" data-target=".method_setElement .collapse">
+                            <h2>Set element</h2>
+                            <pre>setElement(\PhpOffice\PhpWord\Element\Footer|\PhpOffice\PhpWord\Element\Header $element) : self</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$element</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractContainer.html">\PhpOffice\PhpWord\Element\AbstractContainer</a></code><p></p>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.Footer.html">\PhpOffice\PhpWord\Element\Footer</a>|<a href="../classes/PhpOffice.PhpWord.Element.Header.html">\PhpOffice\PhpWord\Element\Header</a></code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -448,6 +440,39 @@
                                                                             </div>
                                 </div>
                             </div>
+                                                    <a id="property_element"> </a>
+                            <div class="element clickable property  protected property_element inherited" data-toggle="collapse" data-target=".property_element .collapse">
+                                <h2>Footer/header element to be written</h2>
+                                <pre>element : \PhpOffice\PhpWord\Element\Footer</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code><a href="../classes/PhpOffice.PhpWord.Element.Footer.html">\PhpOffice\PhpWord\Element\Footer</a></code>
+                                                                            </div>
+                                </div>
+                            </div>
                                                     <a id="property_parentWriter"> </a>
                             <div class="element clickable property  protected property_parentWriter inherited" data-toggle="collapse" data-target=".property_parentWriter .collapse">
                                 <h2>Parent writer</h2>
@@ -501,7 +526,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Tue, 06 May 2014 01:05:33 +0000.<br/>
+            generated on Tue, 06 May 2014 10:04:33 +0000.<br/>
     </footer>
     </body>
 </html>
