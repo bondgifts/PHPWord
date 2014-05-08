@@ -197,6 +197,12 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public">
+        <a href="#method_addTextBox" title="addTextBox :: Add textbox element">
+            <span class="description">Add textbox element</span><pre>addTextBox</pre>
+        </a>
+    </li>
+
                                                                                                                                                                                                                         <li class="method public">
         <a href="#method_addMemoryImage" title="addMemoryImage :: Add memory image element">
             <span class="description">Add memory image element</span><pre>addMemoryImage</pre>
@@ -302,7 +308,7 @@
                                 <span class="description">Set element index and unique id, and add element into elements collection</span><pre>addElement</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected inherited">
                             <a href="#method_setStyle" title="setStyle :: Set style value">
                                 <span class="description">Set style value</span><pre>setStyle</pre>
                             </a>
@@ -311,7 +317,7 @@
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method private">
                             <a href="#method_checkValidity" title="checkValidity :: Check if a method is allowed for the current container">
                                 <span class="description">Check if a method is allowed for the current container</span><pre>checkValidity</pre>
                             </a>
@@ -902,6 +908,37 @@
                                                                             
                                                                             <h3>Response</h3>
                                         <code><a href="../classes/PhpOffice.PhpWord.Element.CheckBox.html">\PhpOffice\PhpWord\Element\CheckBox</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addTextBox"></a>
+                        <div class="element clickable method public  method_addTextBox" data-toggle="collapse" data-target=".method_addTextBox .collapse">
+                            <h2>Add textbox element</h2>
+                            <pre>addTextBox(mixed $style = null) : \PhpOffice\PhpWord\Element\TextBox</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Element.TextBox.html">\PhpOffice\PhpWord\Element\TextBox</a></code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -1672,25 +1709,21 @@
                             </div>
                                                     <a id="property_phpWord"> </a>
                             <div class="element clickable property  protected property_phpWord inherited" data-toggle="collapse" data-target=".property_phpWord .collapse">
-                                <h2>This file is part of PHPWord - A pure PHP library for reading and writing
-word processing documents.</h2>
-                                <pre>phpWord : </pre>
+                                <h2>PhpWord object</h2>
+                                <pre>phpWord : \PhpOffice\PhpWord\PhpWord</pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
                                     <div class="detail-description">
-                                        <div class="long_description"><p>PHPWord is free software distributed under the terms of the GNU Lesser
-General Public License version 3 as published by the Free Software Foundation.</p>
-<p>For the full copyright and license information, please read the LICENSE
-file that was distributed with this source code. For the full list of
-contributors, visit <a href="https://github.com/PHPOffice/PHPWord/contributors">https://github.com/PHPOffice/PHPWord/contributors</a>. object</p></div>
+                                        <div class="long_description"></div>
 
                                         <table class="table">
                                                                                             <tr>
                                                     <th>
-                                                        
+                                                        var
                                                     </th>
                                                     <td>
+                                                                                                                    
                                                                                                             </td>
                                                 </tr>
                                                                                             <tr>
@@ -1702,12 +1735,14 @@ contributors, visit <a href="https://github.com/PHPOffice/PHPWord/contributors">
                                                 </tr>
                                                                                     </table>
 
+                                                                                    <h3>Type(s)</h3>
+                                            <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code>
                                                                             </div>
                                 </div>
                             </div>
                                                     <a id="property_container"> </a>
                             <div class="element clickable property  protected property_container inherited" data-toggle="collapse" data-target=".property_container .collapse">
-                                <h2>Container type section|header|footer|cell|textrun|footnote|endnote</h2>
+                                <h2>Container type section|header|footer|cell|textrun|footnote|endnote|textbox</h2>
                                 <pre>container : string</pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
@@ -1960,7 +1995,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Wed, 07 May 2014 00:46:39 +0000.<br/>
+            generated on Thu, 08 May 2014 04:55:31 +0000.<br/>
     </footer>
     </body>
 </html>
