@@ -237,7 +237,13 @@ they will be changed to default values.</span><pre>__construct</pre>
         </a>
     </li>
 
-                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_setArrayStyle" title="setArrayStyle :: Set style using associative array">
+            <span class="description">Set style using associative array</span><pre>setArrayStyle</pre>
+        </a>
+    </li>
+
+                                                </ul>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
@@ -257,13 +263,13 @@ they will be changed to default values.</span><pre>__construct</pre>
                             </a>
                         </li>
                                                                                 <li class="method protected inherited">
-                            <a href="#method_setIntVal" title="setIntVal :: Set integer value">
-                                <span class="description">Set integer value</span><pre>setIntVal</pre>
+                            <a href="#method_setIntVal" title="setIntVal :: Set float value: Convert string that contains only numeric into integer">
+                                <span class="description">Set float value: Convert string that contains only numeric into integer</span><pre>setIntVal</pre>
                             </a>
                         </li>
                                                                                 <li class="method protected inherited">
-                            <a href="#method_setFloatVal" title="setFloatVal :: Set float value">
-                                <span class="description">Set float value</span><pre>setFloatVal</pre>
+                            <a href="#method_setFloatVal" title="setFloatVal :: Set float value: Convert string that contains only numeric into float">
+                                <span class="description">Set float value: Convert string that contains only numeric into float</span><pre>setFloatVal</pre>
                             </a>
                         </li>
                                                                                 <li class="method protected inherited">
@@ -271,11 +277,16 @@ they will be changed to default values.</span><pre>__construct</pre>
                                 <span class="description">Set enum value</span><pre>setEnumVal</pre>
                             </a>
                         </li>
-                                                </ul>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_setObjectVal" title="setObjectVal :: Set object value">
+                                <span class="description">Set object value</span><pre>setObjectVal</pre>
+                            </a>
+                        </li>
+                                                                                    </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -436,7 +447,7 @@ they will be changed to default values.</h2>
                                             <a id="method_getTabPos"></a>
                         <div class="element clickable method public  method_getTabPos" data-toggle="collapse" data-target=".method_getTabPos .collapse">
                             <h2>Get Tab Position</h2>
-                            <pre>getTabPos() : int</pre>
+                            <pre>getTabPos() : int|float</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -462,14 +473,14 @@ they will be changed to default values.</h2>
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>int</code><p></p>
+                                        <code>int|float</code><p></p>
                                                                     </div>
                             </div>
                         </div>
                                             <a id="method_setTabPos"></a>
                         <div class="element clickable method public  method_setTabPos" data-toggle="collapse" data-target=".method_setTabPos .collapse">
                             <h2>Set Tab Position</h2>
-                            <pre>setTabPos(int $value) </pre>
+                            <pre>setTabPos(int|float $value) : self</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -484,21 +495,16 @@ they will be changed to default values.</h2>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$value</h4>
-                                                <code>int</code><p></p>
+                                                <code>int|float</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -538,7 +544,7 @@ they will be changed to default values.</h2>
                                             <a id="method_setTabLeader"></a>
                         <div class="element clickable method public  method_setTabLeader" data-toggle="collapse" data-target=".method_setTabLeader .collapse">
                             <h2>Set Tab Leader</h2>
-                            <pre>setTabLeader(string $value = self::TAB_LEADER_DOT) </pre>
+                            <pre>setTabLeader(string $value = self::TAB_LEADER_DOT) : self</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -546,13 +552,6 @@ they will be changed to default values.</h2>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -568,13 +567,15 @@ they will be changed to default values.</h2>
                                                 <code>string</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
                                                                     </div>
                             </div>
                         </div>
                                             <a id="method_getIndent"></a>
                         <div class="element clickable method public  method_getIndent" data-toggle="collapse" data-target=".method_getIndent .collapse">
                             <h2>Get Indent</h2>
-                            <pre>getIndent() : int</pre>
+                            <pre>getIndent() : int|float</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -600,14 +601,14 @@ they will be changed to default values.</h2>
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>int</code><p></p>
+                                        <code>int|float</code><p></p>
                                                                     </div>
                             </div>
                         </div>
                                             <a id="method_setIndent"></a>
                         <div class="element clickable method public  method_setIndent" data-toggle="collapse" data-target=".method_setIndent .collapse">
                             <h2>Set Indent</h2>
-                            <pre>setIndent(string $value) </pre>
+                            <pre>setIndent(int|float $value) : self</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -622,21 +623,16 @@ they will be changed to default values.</h2>
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$value</h4>
-                                                <code>string</code><p></p>
+                                                <code>int|float</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -676,7 +672,7 @@ they will be changed to default values.</h2>
                                             <a id="method_setType"></a>
                         <div class="element clickable method public  method_setType inherited" data-toggle="collapse" data-target=".method_setType .collapse">
                             <h2>Set stop type</h2>
-                            <pre>setType(string $value) </pre>
+                            <pre>setType(string $value) : self</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -684,13 +680,6 @@ they will be changed to default values.</h2>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -706,6 +695,8 @@ they will be changed to default values.</h2>
                                                 <code>string</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -745,7 +736,7 @@ they will be changed to default values.</h2>
                                             <a id="method_setLeader"></a>
                         <div class="element clickable method public  method_setLeader inherited" data-toggle="collapse" data-target=".method_setLeader .collapse">
                             <h2>Set leader</h2>
-                            <pre>setLeader(string $value) </pre>
+                            <pre>setLeader(string $value) : self</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -753,13 +744,6 @@ they will be changed to default values.</h2>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -775,6 +759,8 @@ they will be changed to default values.</h2>
                                                 <code>string</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -814,7 +800,7 @@ they will be changed to default values.</h2>
                                             <a id="method_setPosition"></a>
                         <div class="element clickable method public  method_setPosition inherited" data-toggle="collapse" data-target=".method_setPosition .collapse">
                             <h2>Set position</h2>
-                            <pre>setPosition(int|float $value) </pre>
+                            <pre>setPosition(int|float $value) : self</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -822,13 +808,6 @@ they will be changed to default values.</h2>
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -844,6 +823,8 @@ they will be changed to default values.</h2>
                                                 <code>int|float</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -914,7 +895,7 @@ they will be changed to default values.</h2>
                                             <a id="method_getIndex"></a>
                         <div class="element clickable method public  method_getIndex inherited" data-toggle="collapse" data-target=".method_getIndex .collapse">
                             <h2>Get index number</h2>
-                            <pre>getIndex() : integer|null</pre>
+                            <pre>getIndex() : int|null</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -940,14 +921,14 @@ they will be changed to default values.</h2>
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>integer|null</code><p></p>
+                                        <code>int|null</code><p></p>
                                                                     </div>
                             </div>
                         </div>
                                             <a id="method_setIndex"></a>
                         <div class="element clickable method public  method_setIndex inherited" data-toggle="collapse" data-target=".method_setIndex .collapse">
                             <h2>Set index number</h2>
-                            <pre>setIndex(integer|null $value = null) : self</pre>
+                            <pre>setIndex(int|null $value = null) : self</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -967,7 +948,7 @@ they will be changed to default values.</h2>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$value</h4>
-                                                <code>integer|null</code><p></p>
+                                                <code>int|null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1117,7 +1098,7 @@ Check if the set method is exists. Throws an exception?</p></div>
                                             <a id="method_setNumericVal"></a>
                         <div class="element clickable method protected  method_setNumericVal inherited" data-toggle="collapse" data-target=".method_setNumericVal .collapse">
                             <h2>Set numeric value</h2>
-                            <pre>setNumericVal(mixed $value, integer|float|null $default = null) : integer|float|null</pre>
+                            <pre>setNumericVal(mixed $value, int|float|null $default = null) : int|float|null</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1141,18 +1122,18 @@ Check if the set method is exists. Throws an exception?</p></div>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$default</h4>
-                                                <code>integer|float|null</code><p></p>
+                                                <code>int|float|null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>integer|float|null</code><p></p>
+                                        <code>int|float|null</code><p></p>
                                                                     </div>
                             </div>
                         </div>
                                             <a id="method_setIntVal"></a>
                         <div class="element clickable method protected  method_setIntVal inherited" data-toggle="collapse" data-target=".method_setIntVal .collapse">
-                            <h2>Set integer value</h2>
-                            <pre>setIntVal(mixed $value, integer|null $default = null) : integer|null</pre>
+                            <h2>Set float value: Convert string that contains only numeric into integer</h2>
+                            <pre>setIntVal(mixed $value, int|null $default = null) : int|null</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1176,17 +1157,17 @@ Check if the set method is exists. Throws an exception?</p></div>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$default</h4>
-                                                <code>integer|null</code><p></p>
+                                                <code>int|null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>integer|null</code><p></p>
+                                        <code>int|null</code><p></p>
                                                                     </div>
                             </div>
                         </div>
                                             <a id="method_setFloatVal"></a>
                         <div class="element clickable method protected  method_setFloatVal inherited" data-toggle="collapse" data-target=".method_setFloatVal .collapse">
-                            <h2>Set float value</h2>
+                            <h2>Set float value: Convert string that contains only numeric into float</h2>
                             <pre>setFloatVal(mixed $value, float|null $default = null) : float|null</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -1222,7 +1203,7 @@ Check if the set method is exists. Throws an exception?</p></div>
                                             <a id="method_setEnumVal"></a>
                         <div class="element clickable method protected  method_setEnumVal inherited" data-toggle="collapse" data-target=".method_setEnumVal .collapse">
                             <h2>Set enum value</h2>
-                            <pre>setEnumVal(mixed $value, array $enum, mixed $default = null) </pre>
+                            <pre>setEnumVal(mixed $value = null, array $enum = array(), mixed $default = null) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1258,6 +1239,104 @@ Check if the set method is exists. Throws an exception?</p></div>
                                                                                     <div class="subelement argument">
                                                 <h4>$default</h4>
                                                 <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setObjectVal"></a>
+                        <div class="element clickable method protected  method_setObjectVal inherited" data-toggle="collapse" data-target=".method_setObjectVal .collapse">
+                            <h2>Set object value</h2>
+                            <pre>setObjectVal(mixed $value, string $styleName, mixed &$style) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styleName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setArrayStyle"></a>
+                        <div class="element clickable method public deprecated method_setArrayStyle inherited" data-toggle="collapse" data-target=".method_setArrayStyle .collapse">
+                            <h2>Set style using associative array</h2>
+                            <pre>setArrayStyle(array $style = array()) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.11.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    codeCoverageIgnore
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code>array</code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -1778,7 +1857,7 @@ Check if the set method is exists. Throws an exception?</p></div>
                                                     <a id="property_indent"> </a>
                             <div class="element clickable property  private property_indent" data-toggle="collapse" data-target=".property_indent .collapse">
                                 <h2>Indent</h2>
-                                <pre>indent : int</pre>
+                                <pre>indent : int|float</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
@@ -1791,7 +1870,7 @@ Check if the set method is exists. Throws an exception?</p></div>
                                                         var
                                                     </th>
                                                     <td>
-                                                                                                                    
+                                                                                                                    <p>(twip)</p>
                                                                                                             </td>
                                                 </tr>
                                                                                             <tr>
@@ -1804,7 +1883,7 @@ Check if the set method is exists. Throws an exception?</p></div>
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>int</code>
+                                            <code>int|float</code>
                                                                             </div>
                                 </div>
                             </div>
@@ -1943,7 +2022,7 @@ Check if the set method is exists. Throws an exception?</p></div>
                                                     <a id="property_index"> </a>
                             <div class="element clickable property  protected property_index inherited" data-toggle="collapse" data-target=".property_index .collapse">
                                 <h2>Index number in Style collection for named style</h2>
-                                <pre>index : integer|null</pre>
+                                <pre>index : int|null</pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
@@ -1969,7 +2048,40 @@ Check if the set method is exists. Throws an exception?</p></div>
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>integer|null</code>
+                                            <code>int|null</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_aliases"> </a>
+                            <div class="element clickable property  protected property_aliases inherited" data-toggle="collapse" data-target=".property_aliases .collapse">
+                                <h2>Aliases</h2>
+                                <pre>aliases : array</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
                                                                             </div>
                                 </div>
                             </div>
@@ -1993,7 +2105,7 @@ Check if the set method is exists. Throws an exception?</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 08 May 2014 04:55:24 +0000.<br/>
+            generated on Thu, 08 May 2014 20:31:55 +0000.<br/>
     </footer>
     </body>
 </html>

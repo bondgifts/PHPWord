@@ -156,26 +156,26 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_setGridSpan" title="setGridSpan :: Set grid span (colspan)">
-            <span class="description">Set grid span (colspan)</span><pre>setGridSpan</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
         <a href="#method_getGridSpan" title="getGridSpan :: Get grid span (colspan)">
             <span class="description">Get grid span (colspan)</span><pre>getGridSpan</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_setVMerge" title="setVMerge :: Set vertical merge (rowspan)">
-            <span class="description">Set vertical merge (rowspan)</span><pre>setVMerge</pre>
+        <a href="#method_setGridSpan" title="setGridSpan :: Set grid span (colspan)">
+            <span class="description">Set grid span (colspan)</span><pre>setGridSpan</pre>
         </a>
     </li>
 
                                                                                                         <li class="method public">
         <a href="#method_getVMerge" title="getVMerge :: Get vertical merge (rowspan)">
             <span class="description">Get vertical merge (rowspan)</span><pre>getVMerge</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setVMerge" title="setVMerge :: Set vertical merge (rowspan)">
+            <span class="description">Set vertical merge (rowspan)</span><pre>setVMerge</pre>
         </a>
     </li>
 
@@ -318,6 +318,12 @@
     </li>
 
                                                                                                         <li class="method public inherited">
+        <a href="#method_hasBorders" title="hasBorders :: Has borders?">
+            <span class="description">Has borders?</span><pre>hasBorders</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
         <a href="#method_getStyleName" title="getStyleName :: Get style name">
             <span class="description">Get style name</span><pre>getStyleName</pre>
         </a>
@@ -353,11 +359,17 @@
         </a>
     </li>
 
-                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_setArrayStyle" title="setArrayStyle :: Set style using associative array">
+            <span class="description">Set style using associative array</span><pre>setArrayStyle</pre>
+        </a>
+    </li>
+
+                                                </ul>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method protected inherited">
                             <a href="#method_setNonEmptyVal" title="setNonEmptyVal :: Set default for null and empty value">
                                 <span class="description">Set default for null and empty value</span><pre>setNonEmptyVal</pre>
                             </a>
@@ -373,13 +385,13 @@
                             </a>
                         </li>
                                                                                 <li class="method protected inherited">
-                            <a href="#method_setIntVal" title="setIntVal :: Set integer value">
-                                <span class="description">Set integer value</span><pre>setIntVal</pre>
+                            <a href="#method_setIntVal" title="setIntVal :: Set float value: Convert string that contains only numeric into integer">
+                                <span class="description">Set float value: Convert string that contains only numeric into integer</span><pre>setIntVal</pre>
                             </a>
                         </li>
                                                                                 <li class="method protected inherited">
-                            <a href="#method_setFloatVal" title="setFloatVal :: Set float value">
-                                <span class="description">Set float value</span><pre>setFloatVal</pre>
+                            <a href="#method_setFloatVal" title="setFloatVal :: Set float value: Convert string that contains only numeric into float">
+                                <span class="description">Set float value: Convert string that contains only numeric into float</span><pre>setFloatVal</pre>
                             </a>
                         </li>
                                                                                 <li class="method protected inherited">
@@ -387,15 +399,40 @@
                                 <span class="description">Set enum value</span><pre>setEnumVal</pre>
                             </a>
                         </li>
-                                                </ul>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_setObjectVal" title="setObjectVal :: Set object value">
+                                <span class="description">Set object value</span><pre>setObjectVal</pre>
+                            </a>
+                        </li>
+                                                                                    </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
             <ul>
+                                <li class="constant ">
+                    <a href="#constant_VALIGN_TOP" title="VALIGN_TOP :: Vertical alignment constants">
+                        <span class="description">Vertical alignment constants</span><pre>VALIGN_TOP</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_VALIGN_CENTER" title="VALIGN_CENTER :: ">
+                        <span class="description"></span><pre>VALIGN_CENTER</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_VALIGN_BOTTOM" title="VALIGN_BOTTOM :: ">
+                        <span class="description"></span><pre>VALIGN_BOTTOM</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_VALIGN_BOTH" title="VALIGN_BOTH :: ">
+                        <span class="description"></span><pre>VALIGN_BOTH</pre>
+                    </a>
+                </li>
                                 <li class="constant ">
                     <a href="#constant_TEXT_DIR_BTLR" title="TEXT_DIR_BTLR :: Text direction constants">
                         <span class="description">Text direction constants</span><pre>TEXT_DIR_BTLR</pre>
@@ -404,6 +441,16 @@
                                 <li class="constant ">
                     <a href="#constant_TEXT_DIR_TBRL" title="TEXT_DIR_TBRL :: ">
                         <span class="description"></span><pre>TEXT_DIR_TBRL</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_VMERGE_RESTART" title="VMERGE_RESTART :: Vertical merge (rowspan) constants">
+                        <span class="description">Vertical merge (rowspan) constants</span><pre>VMERGE_RESTART</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_VMERGE_CONTINUE" title="VMERGE_CONTINUE :: ">
+                        <span class="description"></span><pre>VMERGE_CONTINUE</pre>
                     </a>
                 </li>
                                 <li class="constant ">
@@ -474,7 +521,7 @@
                                             <a id="method_setVAlign"></a>
                         <div class="element clickable method public  method_setVAlign" data-toggle="collapse" data-target=".method_setVAlign .collapse">
                             <h2>Set vertical align</h2>
-                            <pre>setVAlign(string $value = null) </pre>
+                            <pre>setVAlign(string $value = null) : self</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -482,13 +529,6 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -504,6 +544,8 @@
                                                 <code>string</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -548,7 +590,7 @@
                                             <a id="method_setTextDirection"></a>
                         <div class="element clickable method public  method_setTextDirection" data-toggle="collapse" data-target=".method_setTextDirection .collapse">
                             <h2>Set text direction</h2>
-                            <pre>setTextDirection(string $value = null) </pre>
+                            <pre>setTextDirection(string $value = null) : self</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -556,13 +598,6 @@
                                     <div class="long_description"></div>
 
                                     <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                                     <tr>
                                                 <th>
                                                     
@@ -578,6 +613,8 @@
                                                 <code>string</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -645,42 +682,6 @@
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_setGridSpan"></a>
-                        <div class="element clickable method public  method_setGridSpan" data-toggle="collapse" data-target=".method_setGridSpan .collapse">
-                            <h2>Set grid span (colspan)</h2>
-                            <pre>setGridSpan(int $value = null) </pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$value</h4>
-                                                <code>int</code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                        </div>
                                             <a id="method_getGridSpan"></a>
                         <div class="element clickable method public  method_getGridSpan" data-toggle="collapse" data-target=".method_getGridSpan .collapse">
                             <h2>Get grid span (colspan)</h2>
@@ -719,10 +720,10 @@
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_setVMerge"></a>
-                        <div class="element clickable method public  method_setVMerge" data-toggle="collapse" data-target=".method_setVMerge .collapse">
-                            <h2>Set vertical merge (rowspan)</h2>
-                            <pre>setVMerge(string $value = null) </pre>
+                                            <a id="method_setGridSpan"></a>
+                        <div class="element clickable method public  method_setGridSpan" data-toggle="collapse" data-target=".method_setGridSpan .collapse">
+                            <h2>Set grid span (colspan)</h2>
+                            <pre>setGridSpan(int $value = null) : self</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -737,21 +738,16 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$value</h4>
-                                                <code>string</code><p></p>
+                                                <code>int</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -793,6 +789,37 @@
                                                                     </div>
                             </div>
                         </div>
+                                            <a id="method_setVMerge"></a>
+                        <div class="element clickable method public  method_setVMerge" data-toggle="collapse" data-target=".method_setVMerge .collapse">
+                            <h2>Set vertical merge (rowspan)</h2>
+                            <pre>setVMerge(string $value = null) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
                                             <a id="method_getShading"></a>
                         <div class="element clickable method public  method_getShading" data-toggle="collapse" data-target=".method_getShading .collapse">
                             <h2>Get shading</h2>
@@ -829,7 +856,7 @@
                                             <a id="method_setShading"></a>
                         <div class="element clickable method public  method_setShading" data-toggle="collapse" data-target=".method_setShading .collapse">
                             <h2>Set shading</h2>
-                            <pre>setShading(array $value = null) : self</pre>
+                            <pre>setShading(mixed $value = null) : self</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -849,7 +876,7 @@
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$value</h4>
-                                                <code>array</code><p></p>
+                                                <code>mixed</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1553,6 +1580,39 @@
                                                                     </div>
                             </div>
                         </div>
+                                            <a id="method_hasBorders"></a>
+                        <div class="element clickable method public  method_hasBorders inherited" data-toggle="collapse" data-target=".method_hasBorders .collapse">
+                            <h2>Has borders?</h2>
+                            <pre>hasBorders() : bool</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
                                             <a id="method_getStyleName"></a>
                         <div class="element clickable method public  method_getStyleName inherited" data-toggle="collapse" data-target=".method_getStyleName .collapse">
                             <h2>Get style name</h2>
@@ -1620,7 +1680,7 @@
                                             <a id="method_getIndex"></a>
                         <div class="element clickable method public  method_getIndex inherited" data-toggle="collapse" data-target=".method_getIndex .collapse">
                             <h2>Get index number</h2>
-                            <pre>getIndex() : integer|null</pre>
+                            <pre>getIndex() : int|null</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1646,14 +1706,14 @@
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>integer|null</code><p></p>
+                                        <code>int|null</code><p></p>
                                                                     </div>
                             </div>
                         </div>
                                             <a id="method_setIndex"></a>
                         <div class="element clickable method public  method_setIndex inherited" data-toggle="collapse" data-target=".method_setIndex .collapse">
                             <h2>Set index number</h2>
-                            <pre>setIndex(integer|null $value = null) : self</pre>
+                            <pre>setIndex(int|null $value = null) : self</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1673,7 +1733,7 @@
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$value</h4>
-                                                <code>integer|null</code><p></p>
+                                                <code>int|null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
@@ -1823,7 +1883,7 @@ Check if the set method is exists. Throws an exception?</p></div>
                                             <a id="method_setNumericVal"></a>
                         <div class="element clickable method protected  method_setNumericVal inherited" data-toggle="collapse" data-target=".method_setNumericVal .collapse">
                             <h2>Set numeric value</h2>
-                            <pre>setNumericVal(mixed $value, integer|float|null $default = null) : integer|float|null</pre>
+                            <pre>setNumericVal(mixed $value, int|float|null $default = null) : int|float|null</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1847,18 +1907,18 @@ Check if the set method is exists. Throws an exception?</p></div>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$default</h4>
-                                                <code>integer|float|null</code><p></p>
+                                                <code>int|float|null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>integer|float|null</code><p></p>
+                                        <code>int|float|null</code><p></p>
                                                                     </div>
                             </div>
                         </div>
                                             <a id="method_setIntVal"></a>
                         <div class="element clickable method protected  method_setIntVal inherited" data-toggle="collapse" data-target=".method_setIntVal .collapse">
-                            <h2>Set integer value</h2>
-                            <pre>setIntVal(mixed $value, integer|null $default = null) : integer|null</pre>
+                            <h2>Set float value: Convert string that contains only numeric into integer</h2>
+                            <pre>setIntVal(mixed $value, int|null $default = null) : int|null</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1882,17 +1942,17 @@ Check if the set method is exists. Throws an exception?</p></div>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$default</h4>
-                                                <code>integer|null</code><p></p>
+                                                <code>int|null</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>integer|null</code><p></p>
+                                        <code>int|null</code><p></p>
                                                                     </div>
                             </div>
                         </div>
                                             <a id="method_setFloatVal"></a>
                         <div class="element clickable method protected  method_setFloatVal inherited" data-toggle="collapse" data-target=".method_setFloatVal .collapse">
-                            <h2>Set float value</h2>
+                            <h2>Set float value: Convert string that contains only numeric into float</h2>
                             <pre>setFloatVal(mixed $value, float|null $default = null) : float|null</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
@@ -1928,7 +1988,7 @@ Check if the set method is exists. Throws an exception?</p></div>
                                             <a id="method_setEnumVal"></a>
                         <div class="element clickable method protected  method_setEnumVal inherited" data-toggle="collapse" data-target=".method_setEnumVal .collapse">
                             <h2>Set enum value</h2>
-                            <pre>setEnumVal(mixed $value, array $enum, mixed $default = null) </pre>
+                            <pre>setEnumVal(mixed $value = null, array $enum = array(), mixed $default = null) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1969,8 +2029,226 @@ Check if the set method is exists. Throws an exception?</p></div>
                                                                     </div>
                             </div>
                         </div>
+                                            <a id="method_setObjectVal"></a>
+                        <div class="element clickable method protected  method_setObjectVal inherited" data-toggle="collapse" data-target=".method_setObjectVal .collapse">
+                            <h2>Set object value</h2>
+                            <pre>setObjectVal(mixed $value, string $styleName, mixed &$style) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$styleName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setArrayStyle"></a>
+                        <div class="element clickable method public deprecated method_setArrayStyle inherited" data-toggle="collapse" data-target=".method_setArrayStyle .collapse">
+                            <h2>Set style using associative array</h2>
+                            <pre>setArrayStyle(array $style = array()) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.11.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    codeCoverageIgnore
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
                     
                                             <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_VALIGN_TOP"> </a>
+                            <div class="element clickable constant  constant_VALIGN_TOP" data-toggle="collapse" data-target=".constant_VALIGN_TOP .collapse">
+                                <h2>Vertical alignment constants</h2>
+                                <pre>VALIGN_TOP</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        const
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>string</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_VALIGN_CENTER"> </a>
+                            <div class="element clickable constant  constant_VALIGN_CENTER" data-toggle="collapse" data-target=".constant_VALIGN_CENTER .collapse">
+                                <h2>VALIGN_CENTER</h2>
+                                <pre>VALIGN_CENTER</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_VALIGN_BOTTOM"> </a>
+                            <div class="element clickable constant  constant_VALIGN_BOTTOM" data-toggle="collapse" data-target=".constant_VALIGN_BOTTOM .collapse">
+                                <h2>VALIGN_BOTTOM</h2>
+                                <pre>VALIGN_BOTTOM</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_VALIGN_BOTH"> </a>
+                            <div class="element clickable constant  constant_VALIGN_BOTH" data-toggle="collapse" data-target=".constant_VALIGN_BOTH .collapse">
+                                <h2>VALIGN_BOTH</h2>
+                                <pre>VALIGN_BOTH</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
                                                     <a id="constant_TEXT_DIR_BTLR"> </a>
                             <div class="element clickable constant  constant_TEXT_DIR_BTLR" data-toggle="collapse" data-target=".constant_TEXT_DIR_BTLR .collapse">
                                 <h2>Text direction constants</h2>
@@ -2035,6 +2313,70 @@ Check if the set method is exists. Throws an exception?</p></div>
                                     </div>
                                 </div>
                             </div>
+                                                    <a id="constant_VMERGE_RESTART"> </a>
+                            <div class="element clickable constant  constant_VMERGE_RESTART" data-toggle="collapse" data-target=".constant_VMERGE_RESTART .collapse">
+                                <h2>Vertical merge (rowspan) constants</h2>
+                                <pre>VMERGE_RESTART</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        const
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>string</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_VMERGE_CONTINUE"> </a>
+                            <div class="element clickable constant  constant_VMERGE_CONTINUE" data-toggle="collapse" data-target=".constant_VMERGE_CONTINUE .collapse">
+                                <h2>VMERGE_CONTINUE</h2>
+                                <pre>VMERGE_CONTINUE</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
                                                     <a id="constant_DEFAULT_BORDER_COLOR"> </a>
                             <div class="element clickable constant  constant_DEFAULT_BORDER_COLOR" data-toggle="collapse" data-target=".constant_DEFAULT_BORDER_COLOR .collapse">
                                 <h2>Default border color</h2>
@@ -2073,10 +2415,10 @@ Check if the set method is exists. Throws an exception?</p></div>
                             </div>
                                             
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
-                                                    <a id="property_valign"> </a>
-                            <div class="element clickable property  private property_valign" data-toggle="collapse" data-target=".property_valign .collapse">
+                                                    <a id="property_vAlign"> </a>
+                            <div class="element clickable property  private property_vAlign" data-toggle="collapse" data-target=".property_vAlign .collapse">
                                 <h2>Vertical align (top, center, both, bottom)</h2>
-                                <pre>valign : string</pre>
+                                <pre>vAlign : string</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
@@ -2541,7 +2883,7 @@ Check if the set method is exists. Throws an exception?</p></div>
                                                     <a id="property_index"> </a>
                             <div class="element clickable property  protected property_index inherited" data-toggle="collapse" data-target=".property_index .collapse">
                                 <h2>Index number in Style collection for named style</h2>
-                                <pre>index : integer|null</pre>
+                                <pre>index : int|null</pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
@@ -2567,7 +2909,40 @@ Check if the set method is exists. Throws an exception?</p></div>
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>integer|null</code>
+                                            <code>int|null</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_aliases"> </a>
+                            <div class="element clickable property  protected property_aliases inherited" data-toggle="collapse" data-target=".property_aliases .collapse">
+                                <h2>Aliases</h2>
+                                <pre>aliases : array</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>array</code>
                                                                             </div>
                                 </div>
                             </div>
@@ -2591,7 +2966,7 @@ Check if the set method is exists. Throws an exception?</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 08 May 2014 04:55:23 +0000.<br/>
+            generated on Thu, 08 May 2014 20:31:56 +0000.<br/>
     </footer>
     </body>
 </html>

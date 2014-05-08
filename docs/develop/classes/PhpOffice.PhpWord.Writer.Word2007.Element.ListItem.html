@@ -131,15 +131,25 @@
         </a>
     </li>
 
-                                                </ul>
+                                                                                                                                                                </ul>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                    </ul>
+                                                                                                                                                    <li class="method protected inherited">
+                            <a href="#method_getXmlWriter" title="getXmlWriter :: Get XML Writer">
+                                <span class="description">Get XML Writer</span><pre>getXmlWriter</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_getElement" title="getElement :: Get Element">
+                                <span class="description">Get Element</span><pre>getElement</pre>
+                            </a>
+                        </li>
+                                                </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                    </ul>
+                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -155,7 +165,7 @@
             <div class="element class">
                 <h1>ListItem</h1>
                 <small style="display: block; text-align: right">
-                                            Extends <a href="../classes/PhpOffice.PhpWord.Writer.Word2007.Element.Element.html">\PhpOffice\PhpWord\Writer\Word2007\Element\Element</a>
+                                            Extends <a href="../classes/PhpOffice.PhpWord.Writer.Word2007.Element.AbstractElement.html">\PhpOffice\PhpWord\Writer\Word2007\Element\AbstractElement</a>
                                                         </small>
                 <p class="short_description">ListItem element writer</p>
                 <div class="details">
@@ -178,9 +188,9 @@
                                                                 <a id="method_write"></a>
                         <div class="element clickable method public  method_write inherited" data-toggle="collapse" data-target=".method_write .collapse">
                             <h2>Write element</h2>
-                            <pre>write() : string</pre>
+                            <pre>write() </pre>
                             <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                                <span class="label">inherited</span>                                                                                                <span class="label">abstract</span>                                                            </div>
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -200,18 +210,23 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
                                                                             </table>
 
                                     
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
                         </div>
                                             <a id="method___construct"></a>
                         <div class="element clickable method public  method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse">
                             <h2>Create new instance</h2>
-                            <pre>__construct(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter, \PhpOffice\PhpWord\Writer\Word2007\Part\AbstractPart $parentWriter, \PhpOffice\PhpWord\Element\AbstractElement $element, bool $withoutP = false) </pre>
+                            <pre>__construct(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter, \PhpOffice\PhpWord\Element\AbstractElement $element, bool $withoutP = false) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -241,10 +256,6 @@
                                                 <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLWriter.html">\PhpOffice\PhpWord\Shared\XMLWriter</a></code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>$parentWriter</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Writer.Word2007.Part.AbstractPart.html">\PhpOffice\PhpWord\Writer\Word2007\Part\AbstractPart</a></code><p></p>
-                                            </div>
-                                                                                    <div class="subelement argument">
                                                 <h4>$element</h4>
                                                 <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractElement.html">\PhpOffice\PhpWord\Element\AbstractElement</a></code><p></p>
                                             </div>
@@ -256,11 +267,77 @@
                                                                     </div>
                             </div>
                         </div>
+                                            <a id="method_getXmlWriter"></a>
+                        <div class="element clickable method protected  method_getXmlWriter inherited" data-toggle="collapse" data-target=".method_getXmlWriter .collapse">
+                            <h2>Get XML Writer</h2>
+                            <pre>getXmlWriter() : \PhpOffice\PhpWord\Shared\XMLWriter</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLWriter.html">\PhpOffice\PhpWord\Shared\XMLWriter</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getElement"></a>
+                        <div class="element clickable method protected  method_getElement inherited" data-toggle="collapse" data-target=".method_getElement .collapse">
+                            <h2>Get Element</h2>
+                            <pre>getElement() : \PhpOffice\PhpWord\Element\AbstractElement</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractElement.html">\PhpOffice\PhpWord\Element\AbstractElement</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
                     
                     
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
                                                     <a id="property_xmlWriter"> </a>
-                            <div class="element clickable property  protected property_xmlWriter inherited" data-toggle="collapse" data-target=".property_xmlWriter .collapse">
+                            <div class="element clickable property  private property_xmlWriter inherited" data-toggle="collapse" data-target=".property_xmlWriter .collapse">
                                 <h2>XML writer</h2>
                                 <pre>xmlWriter : \PhpOffice\PhpWord\Shared\XMLWriter</pre>
                                 <div class="labels">
@@ -292,41 +369,8 @@
                                                                             </div>
                                 </div>
                             </div>
-                                                    <a id="property_parentWriter"> </a>
-                            <div class="element clickable property  protected property_parentWriter inherited" data-toggle="collapse" data-target=".property_parentWriter .collapse">
-                                <h2>Parent writer</h2>
-                                <pre>parentWriter : \PhpOffice\PhpWord\Writer\Word2007\Part\AbstractPart</pre>
-                                <div class="labels">
-                                    <span class="label">inherited</span>                                                                    </div>
-                                <div class="row collapse">
-                                    <div class="detail-description">
-                                        <div class="long_description"></div>
-
-                                        <table class="table">
-                                                                                            <tr>
-                                                    <th>
-                                                        var
-                                                    </th>
-                                                    <td>
-                                                                                                                    
-                                                                                                            </td>
-                                                </tr>
-                                                                                            <tr>
-                                                    <th>
-                                                        
-                                                    </th>
-                                                    <td>
-                                                                                                            </td>
-                                                </tr>
-                                                                                    </table>
-
-                                                                                    <h3>Type(s)</h3>
-                                            <code><a href="../classes/PhpOffice.PhpWord.Writer.Word2007.Part.AbstractPart.html">\PhpOffice\PhpWord\Writer\Word2007\Part\AbstractPart</a></code>
-                                                                            </div>
-                                </div>
-                            </div>
                                                     <a id="property_element"> </a>
-                            <div class="element clickable property  protected property_element inherited" data-toggle="collapse" data-target=".property_element .collapse">
+                            <div class="element clickable property  private property_element inherited" data-toggle="collapse" data-target=".property_element .collapse">
                                 <h2>Element</h2>
                                 <pre>element : \PhpOffice\PhpWord\Element\AbstractElement</pre>
                                 <div class="labels">
@@ -411,7 +455,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 08 May 2014 04:55:27 +0000.<br/>
+            generated on Thu, 08 May 2014 20:31:49 +0000.<br/>
     </footer>
     </body>
 </html>
