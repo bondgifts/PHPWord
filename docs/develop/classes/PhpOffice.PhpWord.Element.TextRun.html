@@ -143,7 +143,7 @@
         </a>
     </li>
 
-                                                                                                        <li class="method public inherited">
+                                                                                                                                                                <li class="method public inherited">
         <a href="#method_addText" title="addText :: Add text/preservetext element">
             <span class="description">Add text/preservetext element</span><pre>addText</pre>
         </a>
@@ -176,6 +176,12 @@
                                                                                                         <li class="method public inherited">
         <a href="#method_addListItem" title="addListItem :: Add listitem element">
             <span class="description">Add listitem element</span><pre>addListItem</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addTable" title="addTable :: Add table element">
+            <span class="description">Add table element</span><pre>addTable</pre>
         </a>
     </li>
 
@@ -320,7 +326,7 @@
                                 <span class="description">Set element index and unique id, and add element into elements collection</span><pre>addElement</pre>
                             </a>
                         </li>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <li class="method protected inherited">
                             <a href="#method_setStyle" title="setStyle :: Set style value">
                                 <span class="description">Set style value</span><pre>setStyle</pre>
                             </a>
@@ -329,7 +335,12 @@
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method private inherited">
+                                                                                                                                                                                                                                                                <li class="method private inherited">
+                            <a href="#method_addGenericElement" title="addGenericElement :: Add generic element with style">
+                                <span class="description">Add generic element with style</span><pre>addGenericElement</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method private inherited">
                             <a href="#method_checkValidity" title="checkValidity :: Check if a method is allowed for the current container">
                                 <span class="description">Check if a method is allowed for the current container</span><pre>checkValidity</pre>
                             </a>
@@ -541,6 +552,45 @@
                                     
                                                                             <h3>Response</h3>
                                         <code>integer</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addGenericElement"></a>
+                        <div class="element clickable method private  method_addGenericElement inherited" data-toggle="collapse" data-target=".method_addGenericElement .collapse">
+                            <h2>Add generic element with style</h2>
+                            <pre>addGenericElement(string $elementName, mixed $style) : \PhpOffice\PhpWord\Element\AbstractElement</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"><p>This is how all elements should be added with dependency injection: with
+just one simple $style. Currently this function supports TextRun, Table,
+and TextBox since all other elements have different arguments</p></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Change the function name into something better?</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$elementName</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Element.AbstractElement.html">\PhpOffice\PhpWord\Element\AbstractElement</a></code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -788,6 +838,39 @@
                                                                             
                                                                             <h3>Response</h3>
                                         <code><a href="../classes/PhpOffice.PhpWord.Element.ListItem.html">\PhpOffice\PhpWord\Element\ListItem</a></code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_addTable"></a>
+                        <div class="element clickable method public  method_addTable inherited" data-toggle="collapse" data-target=".method_addTable .collapse">
+                            <h2>Add table element</h2>
+                            <pre>addTable(mixed $style = null) : \PhpOffice\PhpWord\Element\Table</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Merge with the same function on Footer</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$style</h4>
+                                                <code>mixed</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PhpOffice.PhpWord.Element.Table.html">\PhpOffice\PhpWord\Element\Table</a></code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -2100,7 +2183,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sat, 10 May 2014 07:59:26 +0000.<br/>
+            generated on Sat, 10 May 2014 15:11:42 +0000.<br/>
     </footer>
     </body>
 </html>
