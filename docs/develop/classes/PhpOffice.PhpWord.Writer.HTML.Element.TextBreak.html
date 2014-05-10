@@ -119,9 +119,9 @@
         <li class="nav-header">
             <i class="icon-custom icon-method"></i> Methods
             <ul>
-                                                                                                    <li class="method public inherited">
-        <a href="#method_write" title="write :: Write element">
-            <span class="description">Write element</span><pre>write</pre>
+                                                                                                    <li class="method public">
+        <a href="#method_write" title="write :: Write text break">
+            <span class="description">Write text break</span><pre>write</pre>
         </a>
     </li>
 
@@ -131,15 +131,21 @@
         </a>
     </li>
 
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setWithoutP" title="setWithoutP :: Set without paragraph">
+            <span class="description">Set without paragraph</span><pre>setWithoutP</pre>
+        </a>
+    </li>
+
                                                 </ul>
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                    </ul>
+                                                                                                                                                        </ul>
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                    </ul>
+                                                                                                                                                        </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -155,15 +161,12 @@
             <div class="element class">
                 <h1>TextBreak</h1>
                 <small style="display: block; text-align: right">
-                                            Extends <a href="../classes/PhpOffice.PhpWord.Writer.HTML.Element.Element.html">\PhpOffice\PhpWord\Writer\HTML\Element\Element</a>
+                                            Extends <a href="../classes/PhpOffice.PhpWord.Writer.HTML.Element.AbstractElement.html">\PhpOffice\PhpWord\Writer\HTML\Element\AbstractElement</a>
                                                         </small>
                 <p class="short_description">TextBreak element HTML writer</p>
                 <div class="details">
                     <div class="long_description">
-                        <p>Section: Text, TextRun, Link, Title, PreserveText, TextBreak, PageBreak, Table, ListItem, Image,</p>
-<pre><code>     Object, Endnote, Footnote</code></pre>
-<p>Cell: Text, TextRun, Link, PreserveText, TextBreak, ListItem, Image, Object, Endnote, Footnote
-TextRun: Text, Link, TextBreak, Image, Endnote, Footnote</p>
+                        
                     </div>
                     <table class="table table-bordered">
                                                                                     <tr>
@@ -175,15 +178,15 @@ TextRun: Text, Link, TextBreak, Image, Endnote, Footnote</p>
                                                                                 
                                     </td>
                                 </tr>
-                                                                                                                                                                                                                                                                                        </table>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    </table>
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
                                                                 <a id="method_write"></a>
-                        <div class="element clickable method public  method_write inherited" data-toggle="collapse" data-target=".method_write .collapse">
-                            <h2>Write element</h2>
+                        <div class="element clickable method public  method_write" data-toggle="collapse" data-target=".method_write .collapse">
+                            <h2>Write text break</h2>
                             <pre>write() : string</pre>
                             <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                                                                                                                                                                                            </div>
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -214,7 +217,7 @@ TextRun: Text, Link, TextBreak, Image, Endnote, Footnote</p>
                                             <a id="method___construct"></a>
                         <div class="element clickable method public  method___construct inherited" data-toggle="collapse" data-target=".method___construct .collapse">
                             <h2>Create new instance</h2>
-                            <pre>__construct(\PhpOffice\PhpWord\Writer\HTML $parentWriter, \PhpOffice\PhpWord\Element\AbstractElement $element, bool $withoutP = false) </pre>
+                            <pre>__construct(\PhpOffice\PhpWord\Writer\AbstractWriter $parentWriter, \PhpOffice\PhpWord\Element\AbstractElement $element, bool $withoutP = false) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -241,7 +244,7 @@ TextRun: Text, Link, TextBreak, Image, Endnote, Footnote</p>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$parentWriter</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Writer.HTML.html">\PhpOffice\PhpWord\Writer\HTML</a></code><p></p>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Writer.AbstractWriter.html">\PhpOffice\PhpWord\Writer\AbstractWriter</a></code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$element</h4>
@@ -255,13 +258,49 @@ TextRun: Text, Link, TextBreak, Image, Endnote, Footnote</p>
                                                                     </div>
                             </div>
                         </div>
+                                            <a id="method_setWithoutP"></a>
+                        <div class="element clickable method public  method_setWithoutP inherited" data-toggle="collapse" data-target=".method_setWithoutP .collapse">
+                            <h2>Set without paragraph</h2>
+                            <pre>setWithoutP(bool $value) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
                     
                     
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
                                                     <a id="property_parentWriter"> </a>
                             <div class="element clickable property  protected property_parentWriter inherited" data-toggle="collapse" data-target=".property_parentWriter .collapse">
                                 <h2>Parent writer</h2>
-                                <pre>parentWriter : \PhpOffice\PhpWord\Writer\HTML</pre>
+                                <pre>parentWriter : \PhpOffice\PhpWord\Writer\AbstractWriter</pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
@@ -287,7 +326,7 @@ TextRun: Text, Link, TextBreak, Image, Endnote, Footnote</p>
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code><a href="../classes/PhpOffice.PhpWord.Writer.HTML.html">\PhpOffice\PhpWord\Writer\HTML</a></code>
+                                            <code><a href="../classes/PhpOffice.PhpWord.Writer.AbstractWriter.html">\PhpOffice\PhpWord\Writer\AbstractWriter</a></code>
                                                                             </div>
                                 </div>
                             </div>
@@ -377,7 +416,7 @@ TextRun: Text, Link, TextBreak, Image, Endnote, Footnote</p>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 08 May 2014 20:31:47 +0000.<br/>
+            generated on Sat, 10 May 2014 07:59:32 +0000.<br/>
     </footer>
     </body>
 </html>

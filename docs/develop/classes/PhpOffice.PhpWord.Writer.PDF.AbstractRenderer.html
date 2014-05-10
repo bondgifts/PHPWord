@@ -302,23 +302,23 @@
         <li class="nav-header private">» Private
             <ul>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <li class="method private inherited">
-                            <a href="#method_writeHTMLHead" title="writeHTMLHead :: Generate HTML header">
-                                <span class="description">Generate HTML header</span><pre>writeHTMLHead</pre>
+                            <a href="#method_writeHead" title="writeHead :: Generate HTML header">
+                                <span class="description">Generate HTML header</span><pre>writeHead</pre>
                             </a>
                         </li>
                                                                                 <li class="method private inherited">
-                            <a href="#method_writeHTMLBody" title="writeHTMLBody :: Get content">
-                                <span class="description">Get content</span><pre>writeHTMLBody</pre>
-                            </a>
-                        </li>
-                                                                                <li class="method private inherited">
-                            <a href="#method_writeNotes" title="writeNotes :: Write footnote/endnote contents as textruns">
-                                <span class="description">Write footnote/endnote contents as textruns</span><pre>writeNotes</pre>
+                            <a href="#method_writeBody" title="writeBody :: Get content">
+                                <span class="description">Get content</span><pre>writeBody</pre>
                             </a>
                         </li>
                                                                                 <li class="method private inherited">
                             <a href="#method_writeStyles" title="writeStyles :: Get styles">
                                 <span class="description">Get styles</span><pre>writeStyles</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private inherited">
+                            <a href="#method_writeNotes" title="writeNotes :: Write footnote/endnote contents as textruns">
+                                <span class="description">Write footnote/endnote contents as textruns</span><pre>writeNotes</pre>
                             </a>
                         </li>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <li class="method private inherited">
@@ -350,7 +350,7 @@
                         <p>Not supported: PreserveText, PageBreak, Object</p>
                     </div>
                     <table class="table table-bordered">
-                                                                                                                                                                                                                                                            </table>
+                                                                                                                                                                                                                                                                                                                                                                                                                        </table>
 
                     <h3><i class="icon-custom icon-method"></i> Methods</h3>
                                                                 <a id="method___construct"></a>
@@ -751,10 +751,10 @@
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_writeHTMLHead"></a>
-                        <div class="element clickable method private  method_writeHTMLHead inherited" data-toggle="collapse" data-target=".method_writeHTMLHead .collapse">
+                                            <a id="method_writeHead"></a>
+                        <div class="element clickable method private  method_writeHead inherited" data-toggle="collapse" data-target=".method_writeHead .collapse">
                             <h2>Generate HTML header</h2>
-                            <pre>writeHTMLHead() : string</pre>
+                            <pre>writeHead() : string</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -784,10 +784,43 @@
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_writeHTMLBody"></a>
-                        <div class="element clickable method private  method_writeHTMLBody inherited" data-toggle="collapse" data-target=".method_writeHTMLBody .collapse">
+                                            <a id="method_writeBody"></a>
+                        <div class="element clickable method private  method_writeBody inherited" data-toggle="collapse" data-target=".method_writeBody .collapse">
                             <h2>Get content</h2>
-                            <pre>writeHTMLBody() : string</pre>
+                            <pre>writeBody() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_writeStyles"></a>
+                        <div class="element clickable method private  method_writeStyles inherited" data-toggle="collapse" data-target=".method_writeStyles .collapse">
+                            <h2>Get styles</h2>
+                            <pre>writeStyles() : string</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -852,39 +885,6 @@
                                                                             </table>
 
                                     
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_writeStyles"></a>
-                        <div class="element clickable method private  method_writeStyles inherited" data-toggle="collapse" data-target=".method_writeStyles .collapse">
-                            <h2>Get styles</h2>
-                            <pre>writeStyles() : string</pre>
-                            <div class="labels">
-                                <span class="label">inherited</span>                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -2088,7 +2088,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 08 May 2014 20:31:48 +0000.<br/>
+            generated on Sat, 10 May 2014 07:59:31 +0000.<br/>
     </footer>
     </body>
 </html>

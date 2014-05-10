@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
     <meta charset="utf-8"/>
-    <title>    API Documentation &raquo; \PhpOffice\PhpWord\Writer\RTF\Element\Element
+    <title>    API Documentation &raquo; \PhpOffice\PhpWord\Writer\RTF\Element\AbstractElement
 </title>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -126,8 +126,8 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_write" title="write :: Write element">
-            <span class="description">Write element</span><pre>write</pre>
+        <a href="#method_setWithoutP" title="setWithoutP :: Set without paragraph">
+            <span class="description">Set without paragraph</span><pre>setWithoutP</pre>
         </a>
     </li>
 
@@ -153,10 +153,11 @@
 
         <div class="span8">
             <div class="element class">
-                <h1>Element</h1>
+                <h1>AbstractElement</h1>
                 <small style="display: block; text-align: right">
+                                            Extends <a href="../classes/PhpOffice.PhpWord.Writer.HTML.Element.AbstractElement.html">\PhpOffice\PhpWord\Writer\HTML\Element\AbstractElement</a>
                                                         </small>
-                <p class="short_description">Generic element writer</p>
+                <p class="short_description">Abstract RTF element writer</p>
                 <div class="details">
                     <div class="long_description">
                         
@@ -167,7 +168,7 @@
                                         since
                                                                             </th>
                                     <td>
-                                                                                    0.10.0
+                                                                                    0.11.0
                                                                                 
                                     </td>
                                 </tr>
@@ -177,7 +178,7 @@
                                                                 <a id="method___construct"></a>
                         <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
                             <h2>Create new instance</h2>
-                            <pre>__construct(\PhpOffice\PhpWord\Writer\RTF $parentWriter, \PhpOffice\PhpWord\Element\AbstractElement $element, bool $withoutP = false) </pre>
+                            <pre>__construct(\PhpOffice\PhpWord\Writer\AbstractWriter $parentWriter, \PhpOffice\PhpWord\Element\AbstractElement $element, bool $withoutP = false) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -204,7 +205,7 @@
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$parentWriter</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Writer.RTF.html">\PhpOffice\PhpWord\Writer\RTF</a></code><p></p>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Writer.AbstractWriter.html">\PhpOffice\PhpWord\Writer\AbstractWriter</a></code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$element</h4>
@@ -218,10 +219,10 @@
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_write"></a>
-                        <div class="element clickable method public  method_write" data-toggle="collapse" data-target=".method_write .collapse">
-                            <h2>Write element</h2>
-                            <pre>write() : string</pre>
+                                            <a id="method_setWithoutP"></a>
+                        <div class="element clickable method public  method_setWithoutP" data-toggle="collapse" data-target=".method_setWithoutP .collapse">
+                            <h2>Set without paragraph</h2>
+                            <pre>setWithoutP(bool $value) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -245,9 +246,12 @@
                                             </tr>
                                                                             </table>
 
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>string</code><p></p>
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>bool</code><p></p>
+                                            </div>
+                                                                            
                                                                     </div>
                             </div>
                         </div>
@@ -257,7 +261,7 @@
                                                     <a id="property_parentWriter"> </a>
                             <div class="element clickable property  protected property_parentWriter" data-toggle="collapse" data-target=".property_parentWriter .collapse">
                                 <h2>Parent writer</h2>
-                                <pre>parentWriter : \PhpOffice\PhpWord\Writer\RTF</pre>
+                                <pre>parentWriter : \PhpOffice\PhpWord\Writer\AbstractWriter</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
@@ -283,7 +287,7 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code><a href="../classes/PhpOffice.PhpWord.Writer.RTF.html">\PhpOffice\PhpWord\Writer\RTF</a></code>
+                                            <code><a href="../classes/PhpOffice.PhpWord.Writer.AbstractWriter.html">\PhpOffice\PhpWord\Writer\AbstractWriter</a></code>
                                                                             </div>
                                 </div>
                             </div>
@@ -355,14 +359,14 @@
                             </div>
                                                             </div>
             </div>
-            <a id="\PhpOffice\PhpWord\Writer\RTF\Element\Element"></a>
+            <a id="\PhpOffice\PhpWord\Writer\RTF\Element\AbstractElement"></a>
             <ul class="breadcrumb">
                 <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
                     
     
     <li><span class="divider">\</span><a href="../namespaces/PhpOffice.PhpWord.Writer.RTF.Element.html">Element</a></li>
 
-                <li class="active"><span class="divider">\</span><a href="../classes/PhpOffice.PhpWord.Writer.RTF.Element.Element.html">Element</a></li>
+                <li class="active"><span class="divider">\</span><a href="../classes/PhpOffice.PhpWord.Writer.RTF.Element.AbstractElement.html">AbstractElement</a></li>
             </ul>
         </div>
     </div>
@@ -373,7 +377,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Thu, 08 May 2014 20:31:48 +0000.<br/>
+            generated on Sat, 10 May 2014 07:59:31 +0000.<br/>
     </footer>
     </body>
 </html>
