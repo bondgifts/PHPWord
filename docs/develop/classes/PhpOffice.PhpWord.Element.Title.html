@@ -126,18 +126,6 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_setBookmarkId" title="setBookmarkId :: Set Bookmark ID">
-            <span class="description">Set Bookmark ID</span><pre>setBookmarkId</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
-        <a href="#method_getBookmarkId" title="getBookmarkId :: Get Anchor">
-            <span class="description">Get Anchor</span><pre>getBookmarkId</pre>
-        </a>
-    </li>
-
-                                                                                                        <li class="method public">
         <a href="#method_getText" title="getText :: Get Title Text content">
             <span class="description">Get Title Text content</span><pre>getText</pre>
         </a>
@@ -164,6 +152,18 @@
                                                                                                         <li class="method public">
         <a href="#method_getAnchor" title="getAnchor :: Get Anchor">
             <span class="description">Get Anchor</span><pre>getAnchor</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setBookmarkId" title="setBookmarkId :: Set Bookmark ID">
+            <span class="description">Set Bookmark ID</span><pre>setBookmarkId</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getBookmarkId" title="getBookmarkId :: Get bookmark ID">
+            <span class="description">Get bookmark ID</span><pre>getBookmarkId</pre>
         </a>
     </li>
 
@@ -240,8 +240,8 @@
     </li>
 
                                                                                                         <li class="method public inherited">
-        <a href="#method_isInSection" title="isInSection :: Check if element is located in section doc part (as opposed to header/footer)">
-            <span class="description">Check if element is located in section doc part (as opposed to header/footer)</span><pre>isInSection</pre>
+        <a href="#method_isInSection" title="isInSection :: Check if element is located in Section doc part (as opposed to Header/Footer)">
+            <span class="description">Check if element is located in Section doc part (as opposed to Header/Footer)</span><pre>isInSection</pre>
         </a>
     </li>
 
@@ -322,75 +322,6 @@
                                                 <code>int</code><p></p>
                                             </div>
                                                                             
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_setBookmarkId"></a>
-                        <div class="element clickable method public  method_setBookmarkId" data-toggle="collapse" data-target=".method_setBookmarkId .collapse">
-                            <h2>Set Bookmark ID</h2>
-                            <pre>setBookmarkId(int $bookmarkId) </pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$bookmarkId</h4>
-                                                <code>int</code><p></p>
-                                            </div>
-                                                                            
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_getBookmarkId"></a>
-                        <div class="element clickable method public  method_getBookmarkId" data-toggle="collapse" data-target=".method_getBookmarkId .collapse">
-                            <h2>Get Anchor</h2>
-                            <pre>getBookmarkId() : int</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                    
-                                                                            <h3>Response</h3>
-                                        <code>int</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -496,7 +427,7 @@
                                             <a id="method_setAnchor"></a>
                         <div class="element clickable method public deprecated method_setAnchor" data-toggle="collapse" data-target=".method_setAnchor .collapse">
                             <h2>Set Anchor</h2>
-                            <pre>setAnchor(int $anchor) </pre>
+                            <pre>setAnchor(string $anchor) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -541,7 +472,7 @@
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$anchor</h4>
-                                                <code>int</code><p></p>
+                                                <code>string</code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -550,7 +481,7 @@
                                             <a id="method_getAnchor"></a>
                         <div class="element clickable method public deprecated method_getAnchor" data-toggle="collapse" data-target=".method_getAnchor .collapse">
                             <h2>Get Anchor</h2>
-                            <pre>getAnchor() : int</pre>
+                            <pre>getAnchor() : string</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -564,6 +495,111 @@
                                                 </th>
                                                 <td>
                                                                                                                                                                         0.10.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    codeCoverageIgnore
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setBookmarkId"></a>
+                        <div class="element clickable method public deprecated method_setBookmarkId" data-toggle="collapse" data-target=".method_setBookmarkId .collapse">
+                            <h2>Set Bookmark ID</h2>
+                            <pre>setBookmarkId(int $value) </pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.11.0
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    codeCoverageIgnore
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>int</code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getBookmarkId"></a>
+                        <div class="element clickable method public deprecated method_getBookmarkId" data-toggle="collapse" data-target=".method_getBookmarkId .collapse">
+                            <h2>Get bookmark ID</h2>
+                            <pre>getBookmarkId() : int</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    deprecated
+                                                </th>
+                                                <td>
+                                                                                                                                                                        0.11.0
                                                                                                                                                                         
                                                                                                     </td>
                                             </tr>
@@ -670,7 +706,7 @@
                                             <a id="method_getSectionId"></a>
                         <div class="element clickable method public  method_getSectionId inherited" data-toggle="collapse" data-target=".method_getSectionId .collapse">
                             <h2>Get section number</h2>
-                            <pre>getSectionId() : integer</pre>
+                            <pre>getSectionId() : int</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -696,14 +732,14 @@
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>integer</code><p></p>
+                                        <code>int</code><p></p>
                                                                     </div>
                             </div>
                         </div>
                                             <a id="method_setDocPart"></a>
                         <div class="element clickable method public  method_setDocPart inherited" data-toggle="collapse" data-target=".method_setDocPart .collapse">
                             <h2>Set doc part</h2>
-                            <pre>setDocPart(string $docPart, integer $docPartId = 1) </pre>
+                            <pre>setDocPart(string $docPart, int $docPartId = 1) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -734,7 +770,7 @@
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$docPartId</h4>
-                                                <code>integer</code><p></p>
+                                                <code>int</code><p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -776,7 +812,7 @@
                                             <a id="method_getDocPartId"></a>
                         <div class="element clickable method public  method_getDocPartId inherited" data-toggle="collapse" data-target=".method_getDocPartId .collapse">
                             <h2>Get doc part Id</h2>
-                            <pre>getDocPartId() : integer</pre>
+                            <pre>getDocPartId() : int</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -802,7 +838,7 @@
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>integer</code><p></p>
+                                        <code>int</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -1017,8 +1053,8 @@
                         </div>
                                             <a id="method_isInSection"></a>
                         <div class="element clickable method public  method_isInSection inherited" data-toggle="collapse" data-target=".method_isInSection .collapse">
-                            <h2>Check if element is located in section doc part (as opposed to header/footer)</h2>
-                            <pre>isInSection() : boolean</pre>
+                            <h2>Check if element is located in Section doc part (as opposed to Header/Footer)</h2>
+                            <pre>isInSection() : bool</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1044,14 +1080,14 @@
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>boolean</code><p></p>
+                                        <code>bool</code><p></p>
                                                                     </div>
                             </div>
                         </div>
                                             <a id="method_setStyle"></a>
                         <div class="element clickable method protected  method_setStyle inherited" data-toggle="collapse" data-target=".method_setStyle .collapse">
                             <h2>Set style value</h2>
-                            <pre>setStyle(mixed $styleObject, mixed $styleValue = null, boolean $returnObject = false) </pre>
+                            <pre>setStyle(mixed $styleObject, mixed $styleValue = null, bool $returnObject = false) </pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1086,7 +1122,7 @@
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$returnObject</h4>
-                                                <code>boolean</code><p><p>Always return object</p></p>
+                                                <code>bool</code><p><p>Always return object</p></p>
                                             </div>
                                                                             
                                                                     </div>
@@ -1161,39 +1197,6 @@
                                                                             </div>
                                 </div>
                             </div>
-                                                    <a id="property_bookmarkId"> </a>
-                            <div class="element clickable property  private property_bookmarkId" data-toggle="collapse" data-target=".property_bookmarkId .collapse">
-                                <h2>Title Bookmark ID</h2>
-                                <pre>bookmarkId : int</pre>
-                                <div class="labels">
-                                                                                                        </div>
-                                <div class="row collapse">
-                                    <div class="detail-description">
-                                        <div class="long_description"></div>
-
-                                        <table class="table">
-                                                                                            <tr>
-                                                    <th>
-                                                        var
-                                                    </th>
-                                                    <td>
-                                                                                                                    
-                                                                                                            </td>
-                                                </tr>
-                                                                                            <tr>
-                                                    <th>
-                                                        
-                                                    </th>
-                                                    <td>
-                                                                                                            </td>
-                                                </tr>
-                                                                                    </table>
-
-                                                                                    <h3>Type(s)</h3>
-                                            <code>int</code>
-                                                                            </div>
-                                </div>
-                            </div>
                                                     <a id="property_style"> </a>
                             <div class="element clickable property  private property_style" data-toggle="collapse" data-target=".property_style .collapse">
                                 <h2>Name of the heading style, e.g. &#039;Heading1&#039;</h2>
@@ -1230,7 +1233,7 @@
                                                     <a id="property_anchor"> </a>
                             <div class="element clickable property deprecated private property_anchor" data-toggle="collapse" data-target=".property_anchor .collapse">
                                 <h2>Title anchor</h2>
-                                <pre>anchor : int</pre>
+                                <pre>anchor : string</pre>
                                 <div class="labels">
                                                                                                         </div>
                                 <div class="row collapse">
@@ -1264,7 +1267,7 @@
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>int</code>
+                                            <code>string</code>
                                                                             </div>
                                 </div>
                             </div>
@@ -1298,39 +1301,6 @@
 
                                                                                     <h3>Type(s)</h3>
                                             <code><a href="../classes/PhpOffice.PhpWord.PhpWord.html">\PhpOffice\PhpWord\PhpWord</a></code>
-                                                                            </div>
-                                </div>
-                            </div>
-                                                    <a id="property_container"> </a>
-                            <div class="element clickable property  protected property_container inherited" data-toggle="collapse" data-target=".property_container .collapse">
-                                <h2>Container type section|header|footer|cell|textrun|footnote|endnote|textbox</h2>
-                                <pre>container : string</pre>
-                                <div class="labels">
-                                    <span class="label">inherited</span>                                                                    </div>
-                                <div class="row collapse">
-                                    <div class="detail-description">
-                                        <div class="long_description"></div>
-
-                                        <table class="table">
-                                                                                            <tr>
-                                                    <th>
-                                                        var
-                                                    </th>
-                                                    <td>
-                                                                                                                    
-                                                                                                            </td>
-                                                </tr>
-                                                                                            <tr>
-                                                    <th>
-                                                        
-                                                    </th>
-                                                    <td>
-                                                                                                            </td>
-                                                </tr>
-                                                                                    </table>
-
-                                                                                    <h3>Type(s)</h3>
-                                            <code>string</code>
                                                                             </div>
                                 </div>
                             </div>
@@ -1405,7 +1375,7 @@ e.g. footnote will not be available when $docPart is header or footer.</p></div>
                                                     <a id="property_docPartId"> </a>
                             <div class="element clickable property  protected property_docPartId inherited" data-toggle="collapse" data-target=".property_docPartId .collapse">
                                 <h2>Document part Id</h2>
-                                <pre>docPartId : integer</pre>
+                                <pre>docPartId : int</pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
@@ -1433,14 +1403,14 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p></div>
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>integer</code>
+                                            <code>int</code>
                                                                             </div>
                                 </div>
                             </div>
                                                     <a id="property_elementIndex"> </a>
                             <div class="element clickable property  protected property_elementIndex inherited" data-toggle="collapse" data-target=".property_elementIndex .collapse">
                                 <h2>Index of element in the elements collection (start with 1)</h2>
-                                <pre>elementIndex : integer</pre>
+                                <pre>elementIndex : int</pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
@@ -1466,14 +1436,14 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p></div>
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>integer</code>
+                                            <code>int</code>
                                                                             </div>
                                 </div>
                             </div>
                                                     <a id="property_elementId"> </a>
                             <div class="element clickable property  protected property_elementId inherited" data-toggle="collapse" data-target=".property_elementId .collapse">
                                 <h2>Unique Id for element</h2>
-                                <pre>elementId : integer</pre>
+                                <pre>elementId : int</pre>
                                 <div class="labels">
                                     <span class="label">inherited</span>                                                                    </div>
                                 <div class="row collapse">
@@ -1499,7 +1469,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p></div>
                                                                                     </table>
 
                                                                                     <h3>Type(s)</h3>
-                                            <code>integer</code>
+                                            <code>int</code>
                                                                             </div>
                                 </div>
                             </div>
@@ -1556,7 +1526,7 @@ AUTO, FIRST, and EVEN (AUTO = ODD)</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sun, 11 May 2014 11:32:50 +0000.<br/>
+            generated on Sun, 11 May 2014 18:53:52 +0000.<br/>
     </footer>
     </body>
 </html>

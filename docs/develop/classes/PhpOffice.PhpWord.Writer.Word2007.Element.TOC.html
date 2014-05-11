@@ -241,7 +241,7 @@
                                             <a id="method_writeTitle"></a>
                         <div class="element clickable method private  method_writeTitle" data-toggle="collapse" data-target=".method_writeTitle .collapse">
                             <h2>Write title</h2>
-                            <pre>writeTitle(\PhpOffice\PhpWord\Element\Title $title, bool $writeFieldMark) </pre>
+                            <pre>writeTitle(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter, \PhpOffice\PhpWord\Element\TOC $element, \PhpOffice\PhpWord\Element\Title $title, bool $writeFieldMark) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -266,6 +266,14 @@
                                                                             </table>
 
                                                                             <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$xmlWriter</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLWriter.html">\PhpOffice\PhpWord\Shared\XMLWriter</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$element</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.TOC.html">\PhpOffice\PhpWord\Element\TOC</a></code><p></p>
+                                            </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$title</h4>
                                                 <code><a href="../classes/PhpOffice.PhpWord.Element.Title.html">\PhpOffice\PhpWord\Element\Title</a></code><p></p>
@@ -281,7 +289,7 @@
                                             <a id="method_writeStyle"></a>
                         <div class="element clickable method private  method_writeStyle" data-toggle="collapse" data-target=".method_writeStyle .collapse">
                             <h2>Write style</h2>
-                            <pre>writeStyle(int $indent) </pre>
+                            <pre>writeStyle(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter, \PhpOffice\PhpWord\Element\TOC $element, int $indent) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -307,6 +315,14 @@
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
+                                                <h4>$xmlWriter</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLWriter.html">\PhpOffice\PhpWord\Shared\XMLWriter</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$element</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.TOC.html">\PhpOffice\PhpWord\Element\TOC</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
                                                 <h4>$indent</h4>
                                                 <code>int</code><p></p>
                                             </div>
@@ -317,7 +333,7 @@
                                             <a id="method_writeFieldMark"></a>
                         <div class="element clickable method private  method_writeFieldMark" data-toggle="collapse" data-target=".method_writeFieldMark .collapse">
                             <h2>Write TOC Field</h2>
-                            <pre>writeFieldMark() </pre>
+                            <pre>writeFieldMark(\PhpOffice\PhpWord\Shared\XMLWriter $xmlWriter, \PhpOffice\PhpWord\Element\TOC $element) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -348,7 +364,16 @@
                                             </tr>
                                                                             </table>
 
-                                    
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$xmlWriter</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Shared.XMLWriter.html">\PhpOffice\PhpWord\Shared\XMLWriter</a></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$element</h4>
+                                                <code><a href="../classes/PhpOffice.PhpWord.Element.TOC.html">\PhpOffice\PhpWord\Element\TOC</a></code><p></p>
+                                            </div>
+                                                                            
                                                                     </div>
                             </div>
                         </div>
@@ -584,7 +609,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sun, 11 May 2014 11:32:45 +0000.<br/>
+            generated on Sun, 11 May 2014 18:53:47 +0000.<br/>
     </footer>
     </body>
 </html>
