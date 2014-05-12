@@ -276,6 +276,12 @@
     </li>
 
                                                                                                         <li class="method public">
+        <a href="#method_hasMargins" title="hasMargins :: Has margins?">
+            <span class="description">Has margins?</span><pre>hasMargins</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
         <a href="#method_getShading" title="getShading :: Get shading">
             <span class="description">Get shading</span><pre>getShading</pre>
         </a>
@@ -288,8 +294,38 @@
     </li>
 
                                                                                                         <li class="method public">
-        <a href="#method_hasMargins" title="hasMargins :: Has margins?">
-            <span class="description">Has margins?</span><pre>hasMargins</pre>
+        <a href="#method_getAlign" title="getAlign :: Get alignment">
+            <span class="description">Get alignment</span><pre>getAlign</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setAlign" title="setAlign :: Set alignment">
+            <span class="description">Set alignment</span><pre>setAlign</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getWidth" title="getWidth :: Get width">
+            <span class="description">Get width</span><pre>getWidth</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setWidth" title="setWidth :: Set width">
+            <span class="description">Set width</span><pre>setWidth</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_getUnit" title="getUnit :: Get width unit">
+            <span class="description">Get width unit</span><pre>getUnit</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_setUnit" title="setUnit :: Set width unit">
+            <span class="description">Set width unit</span><pre>setUnit</pre>
         </a>
     </li>
 
@@ -441,7 +477,7 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <li class="method protected inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <li class="method protected inherited">
                             <a href="#method_setNonEmptyVal" title="setNonEmptyVal :: Set default for null and empty value">
                                 <span class="description">Set default for null and empty value</span><pre>setNonEmptyVal</pre>
                             </a>
@@ -480,11 +516,26 @@
         </li>
         <li class="nav-header private">» Private
             <ul>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
             <ul>
+                                <li class="constant ">
+                    <a href="#constant_WIDTH_AUTO" title="WIDTH_AUTO :: ">
+                        <span class="description"></span><pre>WIDTH_AUTO</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_WIDTH_PERCENT" title="WIDTH_PERCENT :: ">
+                        <span class="description"></span><pre>WIDTH_PERCENT</pre>
+                    </a>
+                </li>
+                                <li class="constant ">
+                    <a href="#constant_WIDTH_TWIP" title="WIDTH_TWIP :: ">
+                        <span class="description"></span><pre>WIDTH_TWIP</pre>
+                    </a>
+                </li>
                             </ul>
         </li>
     </ul>
@@ -510,7 +561,7 @@
                                                                 <a id="method___construct"></a>
                         <div class="element clickable method public  method___construct" data-toggle="collapse" data-target=".method___construct .collapse">
                             <h2>Create new table style</h2>
-                            <pre>__construct(mixed $styleTable = null, mixed $styleFirstRow = null) </pre>
+                            <pre>__construct(mixed $tableStyle = null, mixed $firstRowStyle = null) </pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -536,11 +587,11 @@
 
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$styleTable</h4>
+                                                <h4>$tableStyle</h4>
                                                 <code>mixed</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
-                                                <h4>$styleFirstRow</h4>
+                                                <h4>$firstRowStyle</h4>
                                                 <code>mixed</code><p></p>
                                             </div>
                                                                             
@@ -1393,6 +1444,39 @@
                                                                     </div>
                             </div>
                         </div>
+                                            <a id="method_hasMargins"></a>
+                        <div class="element clickable method public  method_hasMargins" data-toggle="collapse" data-target=".method_hasMargins .collapse">
+                            <h2>Has margins?</h2>
+                            <pre>hasMargins() : bool</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>bool</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
                                             <a id="method_getShading"></a>
                         <div class="element clickable method public  method_getShading" data-toggle="collapse" data-target=".method_getShading .collapse">
                             <h2>Get shading</h2>
@@ -1457,10 +1541,10 @@
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_hasMargins"></a>
-                        <div class="element clickable method public  method_hasMargins" data-toggle="collapse" data-target=".method_hasMargins .collapse">
-                            <h2>Has margins?</h2>
-                            <pre>hasMargins() : bool</pre>
+                                            <a id="method_getAlign"></a>
+                        <div class="element clickable method public  method_getAlign" data-toggle="collapse" data-target=".method_getAlign .collapse">
+                            <h2>Get alignment</h2>
+                            <pre>getAlign() : string</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -1486,7 +1570,166 @@
 
                                     
                                                                             <h3>Response</h3>
-                                        <code>bool</code><p></p>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setAlign"></a>
+                        <div class="element clickable method public  method_setAlign" data-toggle="collapse" data-target=".method_setAlign .collapse">
+                            <h2>Set alignment</h2>
+                            <pre>setAlign(string $value = null) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getWidth"></a>
+                        <div class="element clickable method public  method_getWidth" data-toggle="collapse" data-target=".method_getWidth .collapse">
+                            <h2>Get width</h2>
+                            <pre>getWidth() : int|float</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>int|float</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setWidth"></a>
+                        <div class="element clickable method public  method_setWidth" data-toggle="collapse" data-target=".method_setWidth .collapse">
+                            <h2>Set width</h2>
+                            <pre>setWidth(int|float $value = null) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>int|float</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getUnit"></a>
+                        <div class="element clickable method public  method_getUnit" data-toggle="collapse" data-target=".method_getUnit .collapse">
+                            <h2>Get width unit</h2>
+                            <pre>getUnit() : string</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_setUnit"></a>
+                        <div class="element clickable method public  method_setUnit" data-toggle="collapse" data-target=".method_setUnit .collapse">
+                            <h2>Set width unit</h2>
+                            <pre>setUnit(string $value = null) : self</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>string</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>self</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -2550,7 +2793,100 @@ Check if the set method is exists. Throws an exception?</p></div>
                             </div>
                         </div>
                     
-                    
+                                            <h3><i class="icon-custom icon-constant"></i> Constants</h3>
+                                                    <a id="constant_WIDTH_AUTO"> </a>
+                            <div class="element clickable constant  constant_WIDTH_AUTO" data-toggle="collapse" data-target=".constant_WIDTH_AUTO .collapse">
+                                <h2>WIDTH_AUTO</h2>
+                                <pre>WIDTH_AUTO</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        const
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>string Table width units <a href="http://www.schemacentral.com/sc/ooxml/t-w_ST_TblWidth.html">http://www.schemacentral.com/sc/ooxml/t-w_ST_TblWidth.html</a></p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_WIDTH_PERCENT"> </a>
+                            <div class="element clickable constant  constant_WIDTH_PERCENT" data-toggle="collapse" data-target=".constant_WIDTH_PERCENT .collapse">
+                                <h2>WIDTH_PERCENT</h2>
+                                <pre>WIDTH_PERCENT</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <a id="constant_WIDTH_TWIP"> </a>
+                            <div class="element clickable constant  constant_WIDTH_TWIP" data-toggle="collapse" data-target=".constant_WIDTH_TWIP .collapse">
+                                <h2>WIDTH_TWIP</h2>
+                                <pre>WIDTH_TWIP</pre>
+                                <div class="labels">
+                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+                                    </div>
+                                </div>
+                            </div>
+                                            
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
                                                     <a id="property_firstRow"> </a>
                             <div class="element clickable property  private property_firstRow" data-toggle="collapse" data-target=".property_firstRow .collapse">
@@ -2879,6 +3215,105 @@ Check if the set method is exists. Throws an exception?</p></div>
 
                                                                                     <h3>Type(s)</h3>
                                             <code><a href="../classes/PhpOffice.PhpWord.Style.Shading.html">\PhpOffice\PhpWord\Style\Shading</a></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_alignment"> </a>
+                            <div class="element clickable property  private property_alignment" data-toggle="collapse" data-target=".property_alignment .collapse">
+                                <h2>Alignment</h2>
+                                <pre>alignment : \PhpOffice\PhpWord\Style\Alignment</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>Alignment</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code><a href="../classes/PhpOffice.PhpWord.Style.Alignment.html">\PhpOffice\PhpWord\Style\Alignment</a></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_width"> </a>
+                            <div class="element clickable property  private property_width" data-toggle="collapse" data-target=".property_width .collapse">
+                                <h2>Width value</h2>
+                                <pre>width : int|float</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>Width value</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>int|float</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_unit"> </a>
+                            <div class="element clickable property  private property_unit" data-toggle="collapse" data-target=".property_unit .collapse">
+                                <h2>Width unit</h2>
+                                <pre>unit : string</pre>
+                                <div class="labels">
+                                                                                                        </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    <p>Width unit</p>
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>string</code>
                                                                             </div>
                                 </div>
                             </div>
@@ -3265,7 +3700,7 @@ Check if the set method is exists. Throws an exception?</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Sun, 11 May 2014 18:53:43 +0000.<br/>
+            generated on Mon, 12 May 2014 18:55:00 +0000.<br/>
     </footer>
     </body>
 </html>
