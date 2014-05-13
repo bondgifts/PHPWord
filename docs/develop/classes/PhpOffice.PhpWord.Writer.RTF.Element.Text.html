@@ -125,7 +125,7 @@
         </a>
     </li>
 
-                                                                                                                                                                                                                                                                                <li class="method public inherited">
+                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
         <a href="#method___construct" title="__construct :: Create new instance">
             <span class="description">Create new instance</span><pre>__construct</pre>
         </a>
@@ -141,26 +141,36 @@
         </li>
         <li class="nav-header protected">» Protected
             <ul>
-                                                                                                                                                                                                                                                                    </ul>
-        </li>
-        <li class="nav-header private">» Private
-            <ul>
-                                                                                                                <li class="method private">
-                            <a href="#method_writeParagraphStyle" title="writeParagraphStyle :: Write paragraph style">
-                                <span class="description">Write paragraph style</span><pre>writeParagraphStyle</pre>
+                                                                                                                <li class="method protected inherited">
+                            <a href="#method_getStyles" title="getStyles :: Get font and paragraph styles">
+                                <span class="description">Get font and paragraph styles</span><pre>getStyles</pre>
                             </a>
                         </li>
-                                                                                <li class="method private">
-                            <a href="#method_writeFontStyle" title="writeFontStyle :: Write font style beginning">
-                                <span class="description">Write font style beginning</span><pre>writeFontStyle</pre>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_writeOpening" title="writeOpening :: Write opening">
+                                <span class="description">Write opening</span><pre>writeOpening</pre>
                             </a>
                         </li>
-                                                                                <li class="method private">
-                            <a href="#method_getFontStyle" title="getFontStyle :: Get font style">
-                                <span class="description">Get font style</span><pre>getFontStyle</pre>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_writeText" title="writeText :: Write text">
+                                <span class="description">Write text</span><pre>writeText</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_writeClosing" title="writeClosing :: Write closing">
+                                <span class="description">Write closing</span><pre>writeClosing</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method_writeFontStyle" title="writeFontStyle :: Write font style">
+                                <span class="description">Write font style</span><pre>writeFontStyle</pre>
                             </a>
                         </li>
                                                                                                                         </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                            </ul>
         </li>
         <li class="nav-header">
             <i class="icon-custom icon-constant"></i> Constants
@@ -199,9 +209,42 @@
                                                                 <a id="method_write"></a>
                         <div class="element clickable method public  method_write" data-toggle="collapse" data-target=".method_write .collapse">
                             <h2>Write element</h2>
-                            <pre>write() </pre>
+                            <pre>write() : string</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_getStyles"></a>
+                        <div class="element clickable method protected  method_getStyles inherited" data-toggle="collapse" data-target=".method_getStyles .collapse">
+                            <h2>Get font and paragraph styles</h2>
+                            <pre>getStyles() </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -234,12 +277,12 @@
                                                                     </div>
                             </div>
                         </div>
-                                            <a id="method_writeParagraphStyle"></a>
-                        <div class="element clickable method private  method_writeParagraphStyle" data-toggle="collapse" data-target=".method_writeParagraphStyle .collapse">
-                            <h2>Write paragraph style</h2>
-                            <pre>writeParagraphStyle(\PhpOffice\PhpWord\Element\Text $element) : string</pre>
+                                            <a id="method_writeOpening"></a>
+                        <div class="element clickable method protected  method_writeOpening inherited" data-toggle="collapse" data-target=".method_writeOpening .collapse">
+                            <h2>Write opening</h2>
+                            <pre>writeOpening() : string</pre>
                             <div class="labels">
-                                                                                                                                                                                            </div>
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -261,23 +304,82 @@
                                             </tr>
                                                                             </table>
 
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_writeText"></a>
+                        <div class="element clickable method protected  method_writeText inherited" data-toggle="collapse" data-target=".method_writeText .collapse">
+                            <h2>Write text</h2>
+                            <pre>writeText(string $text) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
-                                                <h4>$element</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Element.Text.html">\PhpOffice\PhpWord\Element\Text</a></code><p></p>
+                                                <h4>$text</h4>
+                                                <code>string</code><p></p>
                                             </div>
                                                                             
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p></p>
+                                                                    </div>
+                            </div>
+                        </div>
+                                            <a id="method_writeClosing"></a>
+                        <div class="element clickable method protected  method_writeClosing inherited" data-toggle="collapse" data-target=".method_writeClosing .collapse">
+                            <h2>Write closing</h2>
+                            <pre>writeClosing() : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                            </table>
+
+                                    
                                                                             <h3>Response</h3>
                                         <code>string</code><p></p>
                                                                     </div>
                             </div>
                         </div>
                                             <a id="method_writeFontStyle"></a>
-                        <div class="element clickable method private  method_writeFontStyle" data-toggle="collapse" data-target=".method_writeFontStyle .collapse">
-                            <h2>Write font style beginning</h2>
-                            <pre>writeFontStyle(\PhpOffice\PhpWord\Style\Font $style) : string</pre>
+                        <div class="element clickable method protected  method_writeFontStyle inherited" data-toggle="collapse" data-target=".method_writeFontStyle .collapse">
+                            <h2>Write font style</h2>
+                            <pre>writeFontStyle() : string</pre>
                             <div class="labels">
-                                                                                                                                                                                            </div>
+                                <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
                                 <div class="detail-description">
                                     <div class="long_description"></div>
@@ -290,54 +392,18 @@
                                                 <td>
                                                                                                     </td>
                                             </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
                                                                             </table>
 
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$style</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Style.Font.html">\PhpOffice\PhpWord\Style\Font</a></code><p></p>
-                                            </div>
-                                                                            
+                                    
                                                                             <h3>Response</h3>
                                         <code>string</code><p></p>
-                                                                    </div>
-                            </div>
-                        </div>
-                                            <a id="method_getFontStyle"></a>
-                        <div class="element clickable method private  method_getFontStyle" data-toggle="collapse" data-target=".method_getFontStyle .collapse">
-                            <h2>Get font style</h2>
-                            <pre>getFontStyle(\PhpOffice\PhpWord\Element\Text $element) : \PhpOffice\PhpWord\Style\Font</pre>
-                            <div class="labels">
-                                                                                                                                                                                            </div>
-                            <div class="row collapse">
-                                <div class="detail-description">
-                                    <div class="long_description"></div>
-
-                                    <table class="table">
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                                    <tr>
-                                                <th>
-                                                    
-                                                </th>
-                                                <td>
-                                                                                                    </td>
-                                            </tr>
-                                                                            </table>
-
-                                                                            <h3>Arguments</h3>
-                                                                                    <div class="subelement argument">
-                                                <h4>$element</h4>
-                                                <code><a href="../classes/PhpOffice.PhpWord.Element.Text.html">\PhpOffice\PhpWord\Element\Text</a></code><p></p>
-                                            </div>
-                                                                            
-                                                                            <h3>Response</h3>
-                                        <code><a href="../classes/PhpOffice.PhpWord.Style.Font.html">\PhpOffice\PhpWord\Style\Font</a></code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -424,6 +490,72 @@
                     
                     
                                                                 <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property_fontStyle"> </a>
+                            <div class="element clickable property  private property_fontStyle inherited" data-toggle="collapse" data-target=".property_fontStyle .collapse">
+                                <h2>Font style</h2>
+                                <pre>fontStyle : \PhpWord\PhpOffice\Style\Font</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>\PhpWord\PhpOffice\Style\Font</code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property_paragraphStyle"> </a>
+                            <div class="element clickable property  private property_paragraphStyle inherited" data-toggle="collapse" data-target=".property_paragraphStyle .collapse">
+                                <h2>Paragraph style</h2>
+                                <pre>paragraphStyle : \PhpWord\PhpOffice\Style\Paragraph</pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                                                    </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        var
+                                                    </th>
+                                                    <td>
+                                                                                                                    
+                                                                                                            </td>
+                                                </tr>
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code>\PhpWord\PhpOffice\Style\Paragraph</code>
+                                                                            </div>
+                                </div>
+                            </div>
                                                     <a id="property_parentWriter"> </a>
                             <div class="element clickable property  protected property_parentWriter inherited" data-toggle="collapse" data-target=".property_parentWriter .collapse">
                                 <h2>Parent writer</h2>
@@ -543,7 +675,7 @@
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Tue, 13 May 2014 08:59:41 +0000.<br/>
+            generated on Tue, 13 May 2014 17:55:41 +0000.<br/>
     </footer>
     </body>
 </html>
