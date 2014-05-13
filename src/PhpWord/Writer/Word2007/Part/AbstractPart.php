@@ -93,6 +93,7 @@ abstract class AbstractPart
             'TextRun'  => array_merge($elmCommon, array('Footnote', 'Endnote')),
             'Footnote' => $elmCommon,
             'Endnote'  => $elmCommon,
+            'Textbox' => array('Text')
         );
         $containerName = get_class($container);
         $containerName = substr($containerName, strrpos($containerName, '\\') + 1);

@@ -112,6 +112,11 @@ class XMLWriter
         }
     }
 
+    public function writeAttributes($attrs)
+    {
+        foreach ($attrs as $attr => $val) $this->writeAttribute($attr, $val);
+    }
+    
     /**
      * Get written data
      *

@@ -62,6 +62,23 @@ abstract class AbstractContainer extends AbstractElement
     }
 
     /**
+     * Add textbox element
+     *
+     * @param array $settings
+     * @return Textbox
+     */
+    public function addTextbox($settings = array())
+    {
+        $this->checkValidity('textbox');
+
+        $textbox = new Textbox($settings);
+        // $textRun->setDocPart($this->getDocPart(), $this->getDocPartId());
+        $this->addElement($textbox);
+
+        return $textbox;
+    }
+
+    /**
      * Add text element
      *
      * @param string $text
@@ -359,14 +376,14 @@ abstract class AbstractContainer extends AbstractElement
     private function checkValidity($method)
     {
         // Valid containers for each element
-        $allContainers = array('section', 'header', 'footer', 'cell', 'textrun', 'footnote', 'endnote');
+        $allContainers = array('section', 'header', 'footer', 'cell', 'textbox', 'textrun', 'footnote', 'endnote');
         $validContainers = array(
             'text'          => $allContainers,
             'link'          => $allContainers,
             'textbreak'     => $allContainers,
             'image'         => $allContainers,
             'object'        => $allContainers,
-            'textrun'       => array('section', 'header', 'footer', 'cell'),
+            'textrun'       => array('section', 'header', 'footer', 'cell', 'textbox'),
             'listitem'      => array('section', 'header', 'footer', 'cell'),
             'checkbox'      => array('section', 'header', 'footer', 'cell'),
             'table'         => array('section', 'header', 'footer'),

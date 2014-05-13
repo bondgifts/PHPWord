@@ -34,7 +34,8 @@
     "require": {
         "php": ">=5.3.3",
         "ext-xml": "*",
-        "ext-zip": "*"
+        "ext-zip": "*",
+        "rhumsaa/uuid": "2.7.1"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*"

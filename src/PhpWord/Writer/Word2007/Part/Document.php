@@ -49,6 +49,18 @@ class Document extends AbstractPart
         $xmlWriter->writeAttribute('xmlns:w', 'http://schemas.openxmlformats.org/wordprocessingml/2006/main');
         $xmlWriter->writeAttribute('xmlns:wne', 'http://schemas.microsoft.com/office/word/2006/wordml');
 
+        //Adding in for textbox
+        $xmlWriter->writeAttribute('xmlns:wpc', 'http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas');
+        $xmlWriter->writeAttribute('xmlns:mo', 'http://schemas.microsoft.com/office/mac/office/2008/main');
+        $xmlWriter->writeAttribute('xmlns:mc', 'http://schemas.openxmlformats.org/markup-compatibility/2006');
+        $xmlWriter->writeAttribute('xmlns:mv', 'urn:schemas-microsoft-com:mac:vml');
+        $xmlWriter->writeAttribute('xmlns:wp14', 'http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing');
+        $xmlWriter->writeAttribute('xmlns:w14', 'http://schemas.microsoft.com/office/word/2010/wordml');
+        $xmlWriter->writeAttribute('xmlns:wpg', 'http://schemas.microsoft.com/office/word/2010/wordprocessingGroup');
+        $xmlWriter->writeAttribute('xmlns:wpi', 'http://schemas.microsoft.com/office/word/2010/wordprocessingInk');
+        $xmlWriter->writeAttribute('xmlns:wps', 'http://schemas.microsoft.com/office/word/2010/wordprocessingShape');
+        $xmlWriter->writeAttribute('mc:Ignorable', 'w14 wp14');
+        
         $xmlWriter->startElement('w:body');
 
 
