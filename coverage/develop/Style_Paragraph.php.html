@@ -513,7 +513,7 @@
      </tr>
 
      <tr>
-      <td class="success" colspan="4">&nbsp;<a href="#423">setKeepNext($value = false)</a></td>
+      <td class="success" colspan="4">&nbsp;<a href="#423">setKeepNext($value = true)</a></td>
       <td class="success big">       <div class="progress progress-success" style="width: 100px;">
         <div class="bar" style="width: 100.00%;"></div>
        </div>
@@ -547,7 +547,7 @@
      </tr>
 
      <tr>
-      <td class="success" colspan="4">&nbsp;<a href="#446">setKeepLines($value = false)</a></td>
+      <td class="success" colspan="4">&nbsp;<a href="#446">setKeepLines($value = true)</a></td>
       <td class="success big">       <div class="progress progress-success" style="width: 100px;">
         <div class="bar" style="width: 100.00%;"></div>
        </div>
@@ -581,7 +581,7 @@
      </tr>
 
      <tr>
-      <td class="success" colspan="4">&nbsp;<a href="#469">setPageBreakBefore($value = false)</a></td>
+      <td class="success" colspan="4">&nbsp;<a href="#469">setPageBreakBefore($value = true)</a></td>
       <td class="success big">       <div class="progress progress-success" style="width: 100px;">
         <div class="bar" style="width: 100.00%;"></div>
        </div>
@@ -1148,7 +1148,7 @@
      <tr><td><div align="right"><a name="420"></a><a href="#420">420</a></div></td><td class="codeLine">     * @param bool $value</td></tr>
      <tr><td><div align="right"><a name="421"></a><a href="#421">421</a></div></td><td class="codeLine">     * @return self</td></tr>
      <tr><td><div align="right"><a name="422"></a><a href="#422">422</a></div></td><td class="codeLine">     */</td></tr>
-     <tr><td><div align="right"><a name="423"></a><a href="#423">423</a></div></td><td class="codeLine">    public function setKeepNext($value = false)</td></tr>
+     <tr><td><div align="right"><a name="423"></a><a href="#423">423</a></div></td><td class="codeLine">    public function setKeepNext($value = true)</td></tr>
      <tr><td><div align="right"><a name="424"></a><a href="#424">424</a></div></td><td class="codeLine">    {</td></tr>
      <tr class="success popin" data-title="5 tests cover line 425" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\IOFactoryTest::testLoad&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Style\ParagraphTest::testSetStyleValueWithNullOrEmpty&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Style\ParagraphTest::testSetStyleValueNormal&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Writer\Word2007\Part\DocumentTest::testWriteParagraphStyle&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="425"></a><a href="#425">425</a></div></td><td class="codeLine">        $this-&gt;keepNext = $this-&gt;setBoolVal($value, $this-&gt;keepNext);</td></tr>
      <tr><td><div align="right"><a name="426"></a><a href="#426">426</a></div></td><td class="codeLine"></td></tr>
@@ -1171,7 +1171,7 @@
      <tr><td><div align="right"><a name="443"></a><a href="#443">443</a></div></td><td class="codeLine">     * @param bool $value</td></tr>
      <tr><td><div align="right"><a name="444"></a><a href="#444">444</a></div></td><td class="codeLine">     * @return self</td></tr>
      <tr><td><div align="right"><a name="445"></a><a href="#445">445</a></div></td><td class="codeLine">     */</td></tr>
-     <tr><td><div align="right"><a name="446"></a><a href="#446">446</a></div></td><td class="codeLine">    public function setKeepLines($value = false)</td></tr>
+     <tr><td><div align="right"><a name="446"></a><a href="#446">446</a></div></td><td class="codeLine">    public function setKeepLines($value = true)</td></tr>
      <tr><td><div align="right"><a name="447"></a><a href="#447">447</a></div></td><td class="codeLine">    {</td></tr>
      <tr class="success popin" data-title="4 tests cover line 448" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Reader\Word2007Test::testLoad&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Style\ParagraphTest::testSetStyleValueWithNullOrEmpty&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Style\ParagraphTest::testSetStyleValueNormal&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Writer\Word2007\Part\DocumentTest::testWriteParagraphStyle&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="448"></a><a href="#448">448</a></div></td><td class="codeLine">        $this-&gt;keepLines = $this-&gt;setBoolVal($value, $this-&gt;keepLines);</td></tr>
      <tr><td><div align="right"><a name="449"></a><a href="#449">449</a></div></td><td class="codeLine"></td></tr>
@@ -1194,7 +1194,7 @@
      <tr><td><div align="right"><a name="466"></a><a href="#466">466</a></div></td><td class="codeLine">     * @param bool $value</td></tr>
      <tr><td><div align="right"><a name="467"></a><a href="#467">467</a></div></td><td class="codeLine">     * @return self</td></tr>
      <tr><td><div align="right"><a name="468"></a><a href="#468">468</a></div></td><td class="codeLine">     */</td></tr>
-     <tr><td><div align="right"><a name="469"></a><a href="#469">469</a></div></td><td class="codeLine">    public function setPageBreakBefore($value = false)</td></tr>
+     <tr><td><div align="right"><a name="469"></a><a href="#469">469</a></div></td><td class="codeLine">    public function setPageBreakBefore($value = true)</td></tr>
      <tr><td><div align="right"><a name="470"></a><a href="#470">470</a></div></td><td class="codeLine">    {</td></tr>
      <tr class="success popin" data-title="3 tests cover line 471" data-content="&lt;ul&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Style\ParagraphTest::testSetStyleValueWithNullOrEmpty&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Style\ParagraphTest::testSetStyleValueNormal&lt;/li&gt;&lt;li class=&quot;success&quot;&gt;PhpOffice\PhpWord\Tests\Writer\Word2007\Part\DocumentTest::testWriteParagraphStyle&lt;/li&gt;&lt;/ul&gt;" data-placement="bottom" data-html="true"><td><div align="right"><a name="471"></a><a href="#471">471</a></div></td><td class="codeLine">        $this-&gt;pageBreakBefore = $this-&gt;setBoolVal($value, $this-&gt;pageBreakBefore);</td></tr>
      <tr><td><div align="right"><a name="472"></a><a href="#472">472</a></div></td><td class="codeLine"></td></tr>
@@ -1304,7 +1304,7 @@
      <span class="warning"><strong>Dead Code</strong></span>
     </p>
     <p>
-     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.17</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.11</a> and <a href="http://phpunit.de/">PHPUnit 3.7.37</a> at Mon May 12 19:58:02 UTC 2014.</small>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 1.2.17</a> using <a href="http://www.php.net/" target="_top">PHP 5.5.11</a> and <a href="http://phpunit.de/">PHPUnit 3.7.37</a> at Tue May 13 8:56:05 UTC 2014.</small>
     </p>
    </footer>
   </div>

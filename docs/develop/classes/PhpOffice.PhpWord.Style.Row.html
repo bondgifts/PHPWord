@@ -231,8 +231,8 @@
                             </a>
                         </li>
                                                                                 <li class="method protected inherited">
-                            <a href="#method_setBoolVal" title="setBoolVal :: Set boolean value">
-                                <span class="description">Set boolean value</span><pre>setBoolVal</pre>
+                            <a href="#method_setBoolVal" title="setBoolVal :: Set bool value">
+                                <span class="description">Set bool value</span><pre>setBoolVal</pre>
                             </a>
                         </li>
                                                                                 <li class="method protected inherited">
@@ -241,8 +241,8 @@
                             </a>
                         </li>
                                                                                 <li class="method protected inherited">
-                            <a href="#method_setIntVal" title="setIntVal :: Set float value: Convert string that contains only numeric into integer">
-                                <span class="description">Set float value: Convert string that contains only numeric into integer</span><pre>setIntVal</pre>
+                            <a href="#method_setIntVal" title="setIntVal :: Set integer value: Convert string that contains only numeric into integer">
+                                <span class="description">Set integer value: Convert string that contains only numeric into integer</span><pre>setIntVal</pre>
                             </a>
                         </li>
                                                                                 <li class="method protected inherited">
@@ -374,7 +374,7 @@
                                             <a id="method_setTblHeader"></a>
                         <div class="element clickable method public  method_setTblHeader" data-toggle="collapse" data-target=".method_setTblHeader .collapse">
                             <h2>Is tblHeader</h2>
-                            <pre>setTblHeader(bool $value = false) : self</pre>
+                            <pre>setTblHeader(bool $value = true) : self</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -438,7 +438,7 @@
                                             <a id="method_setCantSplit"></a>
                         <div class="element clickable method public  method_setCantSplit" data-toggle="collapse" data-target=".method_setCantSplit .collapse">
                             <h2>Is cantSplit</h2>
-                            <pre>setCantSplit(bool $value = false) : self</pre>
+                            <pre>setCantSplit(bool $value = true) : self</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -502,7 +502,7 @@
                                             <a id="method_setExactHeight"></a>
                         <div class="element clickable method public  method_setExactHeight" data-toggle="collapse" data-target=".method_setExactHeight .collapse">
                             <h2>Set exactHeight</h2>
-                            <pre>setExactHeight(bool $value = false) : self</pre>
+                            <pre>setExactHeight(bool $value = true) : self</pre>
                             <div class="labels">
                                                                                                                                                                                             </div>
                             <div class="row collapse">
@@ -898,7 +898,7 @@ Check if the set method is exists. Throws an exception?</p></div>
                                             <a id="method_setNonEmptyVal"></a>
                         <div class="element clickable method protected  method_setNonEmptyVal inherited" data-toggle="collapse" data-target=".method_setNonEmptyVal .collapse">
                             <h2>Set default for null and empty value</h2>
-                            <pre>setNonEmptyVal(mixed $value, mixed $default) : mixed</pre>
+                            <pre>setNonEmptyVal(string $value, mixed $default) : mixed</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -918,7 +918,7 @@ Check if the set method is exists. Throws an exception?</p></div>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$value</h4>
-                                                <code>mixed</code><p></p>
+                                                <code>string</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$default</h4>
@@ -932,8 +932,8 @@ Check if the set method is exists. Throws an exception?</p></div>
                         </div>
                                             <a id="method_setBoolVal"></a>
                         <div class="element clickable method protected  method_setBoolVal inherited" data-toggle="collapse" data-target=".method_setBoolVal .collapse">
-                            <h2>Set boolean value</h2>
-                            <pre>setBoolVal(mixed $value, boolean|null $default = null) : boolean|null</pre>
+                            <h2>Set bool value</h2>
+                            <pre>setBoolVal(bool $value, bool $default) : bool</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -953,15 +953,15 @@ Check if the set method is exists. Throws an exception?</p></div>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$value</h4>
-                                                <code>mixed</code><p></p>
+                                                <code>bool</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$default</h4>
-                                                <code>boolean|null</code><p></p>
+                                                <code>bool</code><p></p>
                                             </div>
                                                                             
                                                                             <h3>Response</h3>
-                                        <code>boolean|null</code><p></p>
+                                        <code>bool</code><p></p>
                                                                     </div>
                             </div>
                         </div>
@@ -1002,8 +1002,8 @@ Check if the set method is exists. Throws an exception?</p></div>
                         </div>
                                             <a id="method_setIntVal"></a>
                         <div class="element clickable method protected  method_setIntVal inherited" data-toggle="collapse" data-target=".method_setIntVal .collapse">
-                            <h2>Set float value: Convert string that contains only numeric into integer</h2>
-                            <pre>setIntVal(mixed $value, int|null $default = null) : int|null</pre>
+                            <h2>Set integer value: Convert string that contains only numeric into integer</h2>
+                            <pre>setIntVal(int|null $value, int|null $default = null) : int|null</pre>
                             <div class="labels">
                                 <span class="label">inherited</span>                                                                                                                                                            </div>
                             <div class="row collapse">
@@ -1023,7 +1023,7 @@ Check if the set method is exists. Throws an exception?</p></div>
                                                                             <h3>Arguments</h3>
                                                                                     <div class="subelement argument">
                                                 <h4>$value</h4>
-                                                <code>mixed</code><p></p>
+                                                <code>int|null</code><p></p>
                                             </div>
                                                                                     <div class="subelement argument">
                                                 <h4>$default</h4>
@@ -1433,7 +1433,7 @@ Check if the set method is exists. Throws an exception?</p></div>
             Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
             <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
             Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
-            generated on Mon, 12 May 2014 20:01:51 +0000.<br/>
+            generated on Tue, 13 May 2014 08:59:37 +0000.<br/>
     </footer>
     </body>
 </html>
