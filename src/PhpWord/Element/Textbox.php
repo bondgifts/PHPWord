@@ -11,6 +11,7 @@ namespace PhpOffice\PhpWord\Element;
 
 use PhpOffice\PhpWord\Exception\Exception;
 use PhpOffice\PhpWord\Style\Textbox as TextboxSettings;
+use Rhumsaa\Uuid\Uuid;
 
 /**
  * Section
@@ -24,6 +25,8 @@ class Textbox extends AbstractContainer
      */
     private $settings;
 
+    protected $uri;
+
     /**
      * Create new instance
      *
@@ -33,9 +36,21 @@ class Textbox extends AbstractContainer
     public function __construct($settings = null)
     {
         $this->container = 'textbox';
-        // $this->setDocPart($this->container, $this->sectionId);
+        $this->setDocPart($this->container);
         $this->settings = new TextboxSettings();
         $this->setSettings($settings);
+        $this->setUri();
+        
+    }
+
+    private function setUri()
+    {
+        $this->uri = '{'.Uuid::uuid4().'}';
+    }
+
+    public function getUri()
+    {
+        return $this->uri;
     }
 
     /**
@@ -45,7 +60,6 @@ class Textbox extends AbstractContainer
      */
     public function setSettings($settings = null)
     {
-
         if (!is_null($settings) && is_array($settings)) {
             foreach ($settings as $key => $value) {
                 if (is_null($value)) {

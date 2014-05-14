@@ -230,6 +230,18 @@ class Section extends Border
     }
 
     /**
+     * Set Page Size Width
+     *
+     * @return int|float
+     */
+    public function setPageSizeW($value = '')
+    {
+        $this->pageSizeW = $this->setNumericVal($value, self::DEFAULT_WIDTH);
+
+        return $this;
+    }
+
+    /**
      * Get Page Size Height
      *
      * @return int|float
@@ -237,6 +249,18 @@ class Section extends Border
     public function getPageSizeH()
     {
         return $this->pageSizeH;
+    }
+
+    /**
+     * Set Page Size Height
+     *
+     * @return int|float
+     */
+    public function setPageSizeH($value = '')
+    {
+        $this->pageSizeH = $this->setNumericVal($value, self::DEFAULT_HEIGHT);
+
+        return $this;
     }
 
     /**

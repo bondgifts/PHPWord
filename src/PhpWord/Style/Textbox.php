@@ -9,8 +9,6 @@
 
 namespace PhpOffice\PhpWord\Style;
 
-use PhpOffice\PhpWord\Style\LineNumbering;
-
 /**
  * Section settings
  */

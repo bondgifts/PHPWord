@@ -3,16 +3,29 @@
  * Header file
  */
 error_reporting(E_ALL);
+ini_set('display_errors', 1);
 define('CLI', (PHP_SAPI == 'cli') ? true : false);
 define('EOL', CLI ? PHP_EOL : '<br />');
 define('SCRIPT_FILENAME', basename($_SERVER['SCRIPT_FILENAME'], '.php'));
 define('IS_INDEX', SCRIPT_FILENAME == 'index');
 
+
+function pp($data, $die = FALSE)
+{
+    echo '<pre>';
+    print_r($data);
+    echo '</pre>';
+    
+    if ($die) exit;
+}
+
 require_once '../src/PhpWord/Autoloader.php';
 \PhpOffice\PhpWord\Autoloader::register();
 
+require_once '../vendor/autoload.php';
+
 // Set writers
-$writers = array('Word2007' => 'docx', 'ODText' => 'odt', 'RTF' => 'rtf', 'HTML' => 'html', 'PDF' => 'pdf');
+$writers = array('Word2007' => 'docx');//, 'ODText' => 'odt', 'RTF' => 'rtf', 'HTML' => 'html', 'PDF' => 'pdf');
 
 // Set PDF renderer
 $rendererName = \PhpOffice\PhpWord\Settings::PDF_RENDERER_DOMPDF;
