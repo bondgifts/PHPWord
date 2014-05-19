@@ -77,6 +77,10 @@ class Textbox extends Element
 
         $this->xmlWriter->startElement('a:off');
         $this->xmlWriter->writeAttributes(array(
+            'cx' => $this->settings->getRotation()
+        ));
+
+        $this->xmlWriter->writeAttributes(array(
             'x' => '0',
             'y' => '0'
         ));

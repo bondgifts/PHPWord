@@ -19,15 +19,17 @@ class Textbox extends AbstractStyle
      *
      * @const int|float
      */
-    const DEFAULT_WIDTH = 1440; // In twip
-    const DEFAULT_HEIGHT = 1440; // In twip
-    const DEFAULT_OFFSET_X = 0; // In twip
-    const DEFAULT_OFFSET_Y = 0; // In twip
+    const DEFAULT_WIDTH = 914440; // In EMU
+    const DEFAULT_HEIGHT = 914440; // In EMU
+    const DEFAULT_OFFSET_X = 0; // In EMU
+    const DEFAULT_OFFSET_Y = 0; // In EMU
+    const DEFAULT_ROTATION = 0;
 
     private $width = self::DEFAULT_WIDTH;
     private $height = self::DEFAULT_HEIGHT;
     private $offsetX = self::DEFAULT_OFFSET_X;
     private $offsetY = self::DEFAULT_OFFSET_Y;
+    private $rotation = self::DEFAULT_ROTATION;
 
     /**
      * Set Setting Value
@@ -63,7 +65,7 @@ class Textbox extends AbstractStyle
     }
 
     /**
-     * Get Page Size Height
+     * Get Height
      *
      * @return int|float
      */
@@ -99,6 +101,23 @@ class Textbox extends AbstractStyle
     public function setOffsetY($value = '')
     {
         $this->offsetY = $this->setNumericVal($value, self::DEFAULT_OFFSET_Y);
+
+        return $this;
+    }
+
+    /**
+     * Get Rotation
+     *
+     * @return int|float
+     */
+    public function getRotation()
+    {
+        return $this->rotation;
+    }
+
+    public function setRotation($value = '')
+    {
+        $this->rotation = $this->setNumericVal($value, self::DEFAULT_ROTATION);
 
         return $this;
     }
