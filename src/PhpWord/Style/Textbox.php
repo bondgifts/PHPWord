@@ -41,9 +41,8 @@ class Textbox extends AbstractStyle
         return $this->setStyleValue($key, $value);
     }
 
-
     /**
-     * Get Page Size Width
+     * Get Width
      *
      * @return int|float
      */
@@ -52,6 +51,10 @@ class Textbox extends AbstractStyle
         return $this->width;
     }
 
+    /**
+     * Set Width
+     * @param string $value [description]
+     */
     public function setWidth($value = '')
     {
         $this->width = $this->setNumericVal($value, self::DEFAULT_WIDTH);
