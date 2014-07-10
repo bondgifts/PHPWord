@@ -211,6 +211,17 @@ abstract class AbstractContainer extends AbstractElement
         }
     }
 
+		public function addLineBreak($count = 1, $fontStyle = null, $paragraphStyle = null)
+		{
+			$this->checkValidity('linebreak');
+
+			for ($i = 1; $i <= $count; $i++) {
+				$textBreak = new LineBreak($fontStyle, $paragraphStyle);
+				$textBreak->setDocPart($this->getDocPart(), $this->getDocPartId());
+				$this->addElement($textBreak);
+			}
+		}
+
     /**
      * Add listitem element
      *
@@ -380,6 +391,7 @@ abstract class AbstractContainer extends AbstractElement
         $validContainers = array(
             'text'          => $allContainers,
             'link'          => $allContainers,
+						'linebreak'			=> $allContainers,
             'textbreak'     => $allContainers,
             'image'         => $allContainers,
             'object'        => $allContainers,
