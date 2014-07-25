@@ -31,7 +31,10 @@ class Spacing extends AbstractStyle
         }
         if (!is_null($this->style->getAfter())) {
             $this->xmlWriter->writeAttribute('w:after', $this->convertTwip($this->style->getAfter()));
-        }
+        }else{
+					$this->xmlWriter->writeAttribute('w:after', 0);
+				}
+
         if (!is_null($this->style->getLine())) {
             $this->xmlWriter->writeAttribute('w:line', $this->style->getLine());
             $this->xmlWriter->writeAttribute('w:lineRule', $this->style->getRule());
